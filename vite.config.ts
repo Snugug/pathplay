@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 import * as path from 'path';
 import * as url from 'url';
@@ -38,4 +38,4 @@ export default defineConfig({
   resolve: {
     alias: aliases,
   },
-})
+});
