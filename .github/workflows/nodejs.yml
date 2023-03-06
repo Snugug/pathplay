@@ -1,0 +1,77 @@
+name: Build, Test, Deploy
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  #########################
+  ## Site Build & Testing
+  #########################
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VOLTA_FEATURE_PNPM: 1
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Volta
+        uses: volta-cli/action@v3
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install project dependencies
+        run: |
+          pnpm install
+      - name: Build and Test
+        run: |
+          pnpm run build
+        env:
+          CI: true
+      - name: Upload built state
+        uses: actions/upload-artifact@v1
+        with:
+          name: site
+          path: dist
+
+  #########################
+  ## Production Deploy
+  #########################
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download compiled site
+        uses: actions/download-artifact@v1
+        with:
+          name: site
+          path: dist
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+      
