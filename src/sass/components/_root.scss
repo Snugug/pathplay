@@ -1,0 +1,24 @@
+@use 'sass:map';
+
+:root {
+  @each $name, $value in $colors {
+    --#{$name}: #{$value};
+  }
+
+  @each $theme, $colors in $themes {
+    @each $color, $value in $colors {
+      --theme-#{$theme}--#{'' + $color}: #{$value};
+    }
+  }
+
+  @each $color, $value in map.get($themes, 'dark') {
+    --theme-#{'' + $color}: var(--theme-dark--#{$color});
+  }
+
+  @each $class, $color in $class-colors {
+    --#{$class}: var(--#{$color});
+  }
+
+  background-color: var(--theme-body);
+  color: var(--theme-text);
+}

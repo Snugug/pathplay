@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'sass:math';
+
+@mixin classBackground($color) {
+  --base-hue: math.div(color.hue($color), 1deg);
+  --max-saturation: math.div(color.saturation($color), 1%);
+  --max-lightness: math.div(color.lightness($color), 1%);
+  background-color: $color;
+}
+
+.class {
+  @include classBackground(color('white'));
+  --size: 35;
+  --paint-alpha: 0.15;
+  background-image: paint(triangles);
+
+  @each $class, $color in $class-colors {
+    &[data-class='#{$class}'] {
+      @include classBackground(color($color));
+    }
+  }
+}

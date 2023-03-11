@@ -1,0 +1,173 @@
+@use 'sass:map';
+@use 'sass:meta';
+
+$hues: (
+  'pink': 320,
+  'teal': 170,
+  'green': 145,
+  'red': 0,
+  'blue': 195,
+  'yellow': 50,
+  'purple': 280,
+  'white': 0,
+  'black': 280,
+  'grey': 280,
+);
+
+$saturations: (
+  'white': 0,
+  'black': 10,
+  'grey': 3,
+);
+
+$lightness: (
+  default: (
+    light: 76,
+    default: 46,
+    dark: 30,
+  ),
+  'white': 100,
+  'black': 10,
+  'grey': (
+    light: 90,
+    medium: 59,
+    default: 50,
+    dark: 20,
+  ),
+  'yellow': (
+    light: 76,
+    default: 46,
+    dark: 33.9,
+  ),
+);
+
+$colors: ();
+
+@each $color, $hue in $hues {
+  $sat: map.get($saturations, $color);
+  $light: map.get($lightness, $color);
+
+  @if $sat == null {
+    $sat: 100;
+  }
+  @if $light == null {
+    $light: map.get($lightness, default);
+  }
+
+  @if meta.type-of($light) == 'number' {
+    $colors: map.set($colors, '#{$color}', hsl($hue, $sat * 1%, $light * 1%));
+  } @else {
+    @each $lght, $lghtVal in $light {
+      $prefix: '';
+      @if $lght != 'default' {
+        $prefix: '#{$lght}-';
+      }
+      $colors: map.set(
+        $colors,
+        '#{$prefix}#{$color}',
+        hsl($hue, $sat * 1%, $lghtVal * 1%)
+      );
+    }
+  }
+}
+
+$class-colors: (
+  alchemist: 'green',
+  barbarian: 'dark-red',
+  bard: 'light-pink',
+  champion: 'purple',
+  cleric: 'light-purple',
+  druid: 'dark-green',
+  fighter: 'red',
+  gunslinger: 'grey',
+  inventor: 'dark-yellow',
+  investigator: 'pink',
+  magus: 'dark-teal',
+  monk: 'light-teal',
+  oracle: 'dark-purple',
+  psychic: 'yellow',
+  ranger: 'light-green',
+  rogue: 'black',
+  sorcerer: 'light-blue',
+  summoner: 'light-yellow',
+  swashbuckler: 'teal',
+  thaumaturge: 'dark-pink',
+  witch: 'dark-blue',
+  wizard: 'blue',
+);
+
+// $colors: (
+//   'light-grey': #ebebeb,
+//   'grey': #d7d7d7,
+//   'dark-grey': #808080,
+//   'black': #010a1a,
+//   'white': #ffffff,
+//   'light-red': #ffb0b1,
+//   'red': #e24a1a,
+//   'light-orange': #ffd8a5,
+//   'orange': #f79700,
+//   'gold': #ffd96d,
+//   'light-yellow': #fffc9c,
+//   'yellow': #fde90d,
+//   'dark-yellow': #d5c200,
+//   'light-green': #b9f8d7,
+//   'green': #00be5c,
+//   'light-teal': #56e8ef,
+//   'teal': #14b8be,
+//   'dark-teal': #11b495,
+//   'light-blue': #9acdff,
+//   'blue': #53a3ff,
+//   'light-purple': #d0c0ff,
+//   'purple': #9478ff,
+//   'dark-purple': #8c7da1,
+//   'light-magenta': #dcb3e8,
+//   'magenta': #cc22ff,
+//   'light-pink': #fe9fe9,
+//   'pink': #fd4dd6,
+// );
+/**
+ * Get a color from the color map
+ * @param {string} $name - The name of the color
+ * @return {string} - The color value
+ */
+@function color($name) {
+  @return map-get($colors, $name);
+}
+
+$themes: (
+  light: (
+    text: color('black'),
+    body: color('white'),
+    highlight: color('purple'),
+    purple: color('purple'),
+    red: color('red'),
+    'dark-red': color('dark-red'),
+    green: color('dark-green'),
+    yellow: color('yellow'),
+    'dark-yellow': color('dark-yellow'),
+    blue: color('blue'),
+    teal: color('teal'),
+    grey: color('grey'),
+    'light-grey': color('light-grey'),
+    pink: color('pink'),
+  ),
+  dark: (
+    text: color('light-grey'),
+    body: color('dark-grey'),
+    highlight: color('light-purple'),
+    purple: color('light-purple'),
+    red: color('light-red'),
+    'dark-red': color('red'),
+    green: color('light-green'),
+    yellow: color('light-yellow'),
+    'dark-yellow': color('yellow'),
+    blue: color('light-blue'),
+    teal: color('light-teal'),
+    grey: color('light-grey'),
+    'light-grey': color('grey'),
+    pink: color('light-pink'),
+  ),
+);
+
+// $colors: map.set($colors, 'text', color('white'));
+// $colors: map.set($colors, 'background', color('black'));
