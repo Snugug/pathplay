@@ -38,4 +38,7 @@ export default defineConfig({
   resolve: {
     alias: aliases,
   },
+  build: {
+    target: 'esnext',
+  },
 });
