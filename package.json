@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "run-s data:get",
     "build": "vite build",
     "preview": "vite preview",
     "test": "run-s lint",
