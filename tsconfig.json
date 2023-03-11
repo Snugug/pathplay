@@ -16,7 +16,9 @@
       "$stores/*": ["src/stores/*"],
       "$types/*": ["src/types/*"],
       "$assets/*": ["src/assets/*"],
-      "$sass/*": ["src/sass/*"]
+      "$sass/*": ["src/sass/*"],
+      "$icons/*": ["node_modules/@material-design-icons/svg/outlined/*"],
+      "$data/*": ["data/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
