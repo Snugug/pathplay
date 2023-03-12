@@ -20,7 +20,7 @@
     "css:fix": "stylelint --fix \"**/*.{css,scss,svelte}\"",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "prepare": "husky install",
-    "data:get": "node ./lib/scraper.js"
+    "data:get": "node ./lib/collect.js"
   },
   "lint-staged": {
     "**/*.{svelte,astro}": "stylelint",
