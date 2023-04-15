@@ -6,6 +6,7 @@
   import { cover } from '$stores/cover';
   import MainNav from '$components/MainNav.svelte';
   import Cover from '$components/Cover.svelte';
+  import DataImport from '$components/DataImport.svelte';
 
   const routes = {
     '/': wrap({
@@ -83,6 +84,8 @@
       on:routeLoaded={() => loading.set(false)}
     />
   </main>
+
+  <DataImport />
 </div>
 
 <style lang="scss">
