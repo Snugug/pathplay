@@ -6,6 +6,7 @@ const db = new Dexie('pathplay');
 db.version(1).stores({
   data: 'url, name, slug, type, id',
   meta: 'type',
+  characters: '++id, name, ancestry, heritage, background, class, level',
   // Add characters
 });
 

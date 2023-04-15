@@ -1,16 +1,9 @@
 <script lang="ts">
-  import { db } from '$lib/db';
+  import { db } from '$database';
   import Add from '$icons/add.svg?raw';
   import CharacterCard from '$components/CharacterCard.svelte';
 
-  const characters = db.getAll('characters').then(async (characters) => {
-    for (const character of characters) {
-      if (character.portrait) {
-        character.portrait = await db.get('portraits', character.portrait);
-      }
-    }
-    return characters;
-  });
+  const characters = db.characters.toArray();
 </script>
 
 <div>
