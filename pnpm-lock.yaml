@@ -35,6 +35,7 @@ specifiers:
   puppeteer: ^19.7.4
   sass: ^1.58.3
   sass-toolkit: ^2.10.2
+  slugify: ^1.6.6
   stylelint: ^14.0.0
   stylelint-config-prettier: ^9.0.0
   stylelint-config-recommended: ^9.0.0
@@ -84,6 +85,7 @@ devDependencies:
   prettier-plugin-svelte: 2.9.0_cgqg3krxgxfdbq6p5ohud6nmhm
   puppeteer: 19.7.4_typescript@4.9.5
   sass: 1.58.3
+  slugify: 1.6.6
   stylelint: 14.16.1
   stylelint-config-prettier: 9.0.5_stylelint@14.16.1
   stylelint-config-recommended: 9.0.0_stylelint@14.16.1
@@ -3718,6 +3720,11 @@ packages:
     dependencies:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 4.0.0
+    dev: true
+
+  /slugify/1.6.6:
+    resolution: {integrity: sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==}
+    engines: {node: '>=8.0.0'}
     dev: true
 
   /sorcery/0.11.0:
