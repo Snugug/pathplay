@@ -76,7 +76,9 @@
   "dependencies": {
     "@material-design-icons/svg": "^0.14.3",
     "breakpoint-sass": "^3.0.0",
+    "comlink": "^4.4.1",
     "css-paint-polyfill": "^3.4.0",
+    "dexie": "4.0.1-alpha.10",
     "idb": "^7.1.1",
     "sass-toolkit": "^2.10.2",
     "svelte-spa-router": "^3.3.0"

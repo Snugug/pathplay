@@ -18,7 +18,8 @@
       "$assets/*": ["src/assets/*"],
       "$sass/*": ["src/sass/*"],
       "$icons/*": ["node_modules/@material-design-icons/svg/outlined/*"],
-      "$data/*": ["data/*"]
+      "$data/*": ["data/*"],
+      "$database": ["src/lib/db.js"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
