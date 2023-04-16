@@ -4,6 +4,7 @@ export const structure = {
   level: 1,
   xp: 0,
   heroes: 0,
+  speed: 0,
   ancestry: null,
   heritage: null,
   background: null,
@@ -12,6 +13,21 @@ export const structure = {
   alignment: null,
   traits: [],
   deity: null,
+  senses: [
+    {
+      precision: 'precise',
+      sense: 'vision',
+      // distance in feet if appropriate
+    },
+    {
+      precision: 'imprecise',
+      sense: 'hearing',
+    },
+    {
+      precision: 'vague',
+      sense: 'smell',
+    },
+  ],
   boosts: {
     str: 0,
     dex: 0,
