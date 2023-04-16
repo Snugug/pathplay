@@ -16,16 +16,16 @@ export const structure = {
   senses: [
     {
       precision: 'precise',
-      sense: 'vision',
+      type: 'vision',
       // distance in feet if appropriate
     },
     {
       precision: 'imprecise',
-      sense: 'hearing',
+      type: 'hearing',
     },
     {
       precision: 'vague',
-      sense: 'smell',
+      type: 'smell',
     },
   ],
   boosts: {
@@ -59,8 +59,8 @@ export const structure = {
   // Resistances and vulnerabilities need some object with functions
   defenses: {
     armor: 0,
-    resistances: [],
-    vulnerabilities: [],
+    resistance: [],
+    weakness: [],
     shield: 0,
   },
   // Think these need to go to T/E/M/L
@@ -121,6 +121,8 @@ export const structure = {
   },
   // Favorited actions, other actions should be auto-populated in the UI
   actions: [],
+  // Array of functions that modify the character
+  modifiers: [],
 };
 
 export const spells = {
