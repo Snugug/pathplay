@@ -1,5 +1,6 @@
 globals:
   _parseIdFromHref: readonly
+  _parseURLFromHref: readonly
   _parseChildNode: readonly
   _findElementByText: readonly
   _parseTraining: readonly
@@ -8,6 +9,7 @@ globals:
   _parseTraits: readonly
   _parseSource: readonly
   _parseMeta: readonly
+  _slugify: readonly
 rules:
   no-unused-vars: off
   '@typescript-eslint/no-unused-vars': off
