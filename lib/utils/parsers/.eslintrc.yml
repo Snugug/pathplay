@@ -1,0 +1,13 @@
+globals:
+  _parseIdFromHref: readonly
+  _parseChildNode: readonly
+  _findElementByText: readonly
+  _parseTraining: readonly
+  _ref: readonly
+  _parseActions: readonly
+  _parseTraits: readonly
+  _parseSource: readonly
+  _parseMeta: readonly
+rules:
+  no-unused-vars: off
+  '@typescript-eslint/no-unused-vars': off

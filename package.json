@@ -25,7 +25,7 @@
   },
   "lint-staged": {
     "**/*.{svelte,astro}": "stylelint",
-    "**/*.{js,mjs,cjs,ts,astro,svelte}": "eslint -c .eslintrc.yml",
+    "**/*.{js,mjs,cjs,ts,astro,svelte}": "eslint",
     "**/*": "prettier --plugin-search-dir=. -c"
   },
   "devDependencies": {
