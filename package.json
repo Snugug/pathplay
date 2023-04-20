@@ -80,6 +80,7 @@
     "css-paint-polyfill": "^3.4.0",
     "dexie": "4.0.1-alpha.10",
     "idb": "^7.1.1",
+    "pluralize": "^8.0.0",
     "sass-toolkit": "^2.10.2",
     "svelte-spa-router": "^3.3.0"
   },
