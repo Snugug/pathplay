@@ -9,6 +9,7 @@ globals:
   _parseTraits: readonly
   _parseSource: readonly
   _parseMeta: readonly
+  _parseFeatures: readonly
   _slugify: readonly
 rules:
   no-unused-vars: off
