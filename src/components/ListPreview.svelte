@@ -13,7 +13,12 @@
     <span>{rarity}</span>
   </p>
   {#if image.src}
-    <img class="list-preview--image" src={image.src} alt={image.alt || null} />
+    <img
+      class="list-preview--image"
+      loading="lazy"
+      src={image.src}
+      alt={image.alt || null}
+    />
   {/if}
   <div class="list-preview--forward" aria-hidden>
     {@html ArrowForward}
