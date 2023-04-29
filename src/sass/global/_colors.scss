@@ -71,6 +71,12 @@ $colors: ();
   }
 }
 
+$rarities: (
+  common: 'light-yellow',
+  uncommon: 'light-blue',
+  rare: 'light-purple',
+);
+
 $class-colors: (
   alchemist: 'green',
   barbarian: 'dark-red',

@@ -9,3 +9,5 @@ export const database = wrap(
 export const db = database.db;
 
 export const fetchAndUpdateData = database.fetchAndUpdateData;
+
+export const filterCollection = database.filterCollection;

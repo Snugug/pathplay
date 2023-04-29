@@ -19,6 +19,14 @@
     --#{$class}: var(--#{$color});
   }
 
+  @each $rarity, $color in $rarities {
+    --rarity-#{$rarity}: var(--#{$color});
+  }
+
   background-color: var(--theme-body);
   color: var(--theme-text);
+}
+
+* {
+  box-sizing: border-box;
 }
