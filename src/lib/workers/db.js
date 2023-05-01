@@ -148,8 +148,44 @@ function filterCollection(collection, queries) {
     .toArray();
 }
 
+// /**
+//  *
+//  * @param {string} collection
+//  * @param {function} cb
+//  * @return {Promise}
+//  */
+// async function advancedFilter(collection, cb) {
+//   const items = await db[collection].toArray();
+//   const mapped = await Promise.all(
+//     items.map(async (i) => ({
+//       item: i,
+//       include: await cb(i),
+//     })),
+//   );
+
+//   // const items = await Promise.all(await db[collection].toArray()).map(
+//   //   async (i) => ({
+//   //     item: i,
+//   //     include: await cb(i),
+//   //   }),
+//   // );
+//   // const items = await Promise.all(
+//   //   db[collection].toArray().map(async (i) => ({
+//   //     item: i,
+//   //     include: await cb(i),
+//   //   })),
+//   // );
+
+//   console.log(mapped);
+
+//   return mapped;
+
+//   // return db[collection].filter(async (i) => await cb(i)).toArray();
+// }
+
 expose({
   db,
   fetchAndUpdateData,
   filterCollection,
+  // advancedFilter,
 });
