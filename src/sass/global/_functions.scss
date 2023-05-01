@@ -1,0 +1,11 @@
+@function darken($color, $amount) {
+  @return color-mix(in srgb, $color, black $amount);
+}
+
+@function lighten($color, $amount) {
+  @return color-mix(in srgb, $color, white $amount);
+}
+
+@function transparentize($color, $amount) {
+  @return color-mix(in srgb, $color, transparent $amount);
+}
