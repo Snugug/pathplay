@@ -1,8 +1,23 @@
 <script>
-  import Person from '$icons/perm_identity.svg?raw';
+  import Ribbon from '$components/Ribbon.svelte';
+  import { createEventDispatcher } from 'svelte';
   export let character = {};
 
-  console.log(character);
+  let deleteMatch;
+  let dialog;
+
+  const dispatch = createEventDispatcher();
+
+  /**
+   * Dispatches delete event
+   */
+  function deleteCharacter() {
+    deleteMatch = '';
+    dispatch('deleteCharacter', {
+      id: character.id,
+    });
+    dialog.close();
+  }
 </script>
 
 <article
@@ -16,52 +31,99 @@
           src="data:image/png;base64,{character.portrait}"
           alt={character.name}
         />
-      {:else}
-        {@html Person}
       {/if}
     </div>
-    <h3>{character.name}</h3>
+    <h3 class="character--name">
+      <Ribbon
+        ><span class="character--inner-name">{character.name}</span></Ribbon
+      >
+    </h3>
   </a>
   <div class="actions">
-    <button on:click={() => console.log('edit')}>View</button>
-    <button on:click={() => console.log('delete')}>Delete</button>
+    <a href="/characters/{character.id}/edit">Edit</a>
+    <button on:click={() => dialog.showModal()}>Delete</button>
   </div>
 </article>
+
+<dialog bind:this={dialog}>
+  <p>Are you sure you want to delete {character.name}?</p>
+  <form method="dialog">
+    <p>Type <code>DELETE</code> to confirm deletion</p>
+    <input type="text" bind:value={deleteMatch} />
+    <div class="dialog-actions">
+      <button
+        type="submit"
+        disabled={deleteMatch === 'DELETE' ? null : true}
+        on:click={deleteCharacter}
+      >
+        Delete
+      </button>
+      <button value="cancel" formmethod="dialog">Cancel</button>
+    </div>
+  </form>
+</dialog>
 
 <style lang="scss">
   .character {
     border-radius: 5px;
     height: 100%;
     min-height: 4rem;
+    width: calc(100% - 3rem);
+
+    &--name {
+      font-size: 1rem;
+      width: calc(100% + 3.5rem);
+      transform: translateX(-1.75rem) translateY(0.5em);
+      color: var(--black);
+      position: absolute;
+      top: 0;
+    }
+
+    &--inner-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .link {
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    gap: 1rem;
-    padding: 1rem;
     text-decoration: none;
-
-    min-height: 5rem;
+    display: block;
+    height: 5rem;
+    position: relative;
   }
+
   .actions {
     background-color: var(--theme-text);
-    color: var(--theme-body);
+    color: var(--black);
     padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
+
+    a {
+      color: var(--black);
+    }
   }
 
   .portrait {
-    aspect-ratio: 1 / 1;
-    grid-row: 1 / span 2;
-    border-radius: 5px;
-    border: 1px solid var(--theme-body);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--theme-text);
+    overflow: hidden;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+    }
+
+    // aspect-ratio: 1 / 1;
+    // grid-row: 1 / span 2;
+    // border-radius: 5px;
+    // border: 1px solid var(--theme-body);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: var(--theme-text);
   }
 </style>

@@ -1,28 +1,46 @@
 <script lang="ts">
   import { db } from '$database';
-  import Add from '$icons/add.svg?raw';
   import CharacterCard from '$components/CharacterCard.svelte';
+  import { writable } from 'svelte/store';
 
-  const characters = db.characters.toArray();
+  const characters = writable(null);
+
+  db.characters.toArray().then((c) => {
+    characters.set(c);
+  });
+
+  /**
+   * Handles delete of a character
+   * @param {CustomEvent} e
+   */
+  async function handleDelete(e: CustomEvent<{ id: number }>) {
+    const { id } = e.detail;
+
+    try {
+      await db.characters.delete(id);
+      const index = $characters.findIndex((c) => c.id === id);
+      $characters.splice(index, 1);
+      characters.set($characters);
+    } catch (e) {
+      console.error(e);
+    }
+    //
+    // characters.update();
+  }
 </script>
 
 <div>
-  {#await characters}
-    <p>loading...</p>
-  {:then characters}
+  {#if $characters}
     <ul class="characters">
-      <li>
-        <a href="/characters/new" aria-label="New character" class="add"
-          >{@html Add}</a
-        >
-      </li>
-      {#each characters as character}
+      {#each $characters as character}
         <li>
-          <CharacterCard {character} />
+          <CharacterCard {character} on:deleteCharacter={handleDelete} />
         </li>
       {/each}
     </ul>
-  {/await}
+  {:else}
+    <p>Loading...</p>
+  {/if}
 </div>
 
 <style lang="scss">
