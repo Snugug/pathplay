@@ -26,6 +26,8 @@
 </div>
 
 <style lang="scss">
+  @import '$sass/shared';
+
   .list-preview {
     font-size: 1.25rem;
     background: none;
@@ -45,6 +47,9 @@
     padding: 0.25rem 0.5rem;
     padding-left: 2rem;
     padding-right: 2.5rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 2;
 
@@ -81,6 +86,7 @@
       z-index: 3;
       align-self: center;
       justify-self: center;
+      filter: drop-shadow(0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.2));
     }
 
     &--source {
@@ -88,11 +94,14 @@
     }
 
     &--rarity {
+      $size: 0.35rem;
       position: absolute;
       writing-mode: vertical-lr;
       transform: rotate(180deg);
-      font-size: 0.8rem;
-      height: 100%;
+      font-size: 0.75rem;
+      height: calc(100% + $size * 2);
+      top: $size * -1;
+      left: 0.25rem;
       background-color: var(--bkg);
       text-transform: uppercase;
       width: 1.25rem;
@@ -100,6 +109,30 @@
       align-items: center;
       justify-content: center;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+      filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+      border-radius: 0 2px 2px 0;
+
+      &::before,
+      &::after {
+        --width: calc(#{$size} - 1px);
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: var(--width) var(--width) 0 0;
+        border-color: #{darken(var(--bkg), 15%)} transparent transparent transparent;
+        top: 0;
+        position: absolute;
+        left: calc(-1 * var(--width) + 0.1px);
+        transform: rotate(180deg);
+        z-index: -1;
+      }
+
+      &::after {
+        bottom: 0;
+        top: auto;
+        transform: rotate(90deg);
+      }
     }
 
     &--forward {

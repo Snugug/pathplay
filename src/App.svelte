@@ -13,10 +13,16 @@
       asyncComponent: () => import('$routes/Home.svelte'),
     }),
     '/characters/new': wrap({
-      asyncComponent: () => import('$routes/NewCharacter.svelte'),
+      asyncComponent: () => import('$routes/EditCharacter.svelte'),
     }),
     '/licenses': wrap({
       asyncComponent: () => import('$routes/Licenses.svelte'),
+    }),
+    '/characters/:id': wrap({
+      asyncComponent: () => import('$routes/Character.svelte'),
+    }),
+    '/characters/:id/edit': wrap({
+      asyncComponent: () => import('$routes/EditCharacter.svelte'),
     }),
   };
 
@@ -26,9 +32,12 @@
     const link = target.closest('a');
 
     if (link) {
-      e.preventDefault();
-      push(link.getAttribute('href'));
-      cover.set(false);
+      if (window.location.origin === new URL(link.href).origin) {
+        console.log('SPA Router');
+        e.preventDefault();
+        push(link.getAttribute('href'));
+        cover.set(false);
+      }
     }
   });
 
