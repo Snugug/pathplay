@@ -4,52 +4,119 @@
   import { filterCollection } from '$database';
   export let ancestry;
 
-  // Languages
+  let sidebar = [];
+
   let languages = [];
-  $: knownLanguages = (ancestry.languages?.known || [])
-    .filter((l, i, a) => a.indexOf(l) === i)
-    .map((url) => {
-      return languages.find((l) => l.url === url);
-    })
-    .filter((i) => i !== undefined);
-  $: optionalLanguages = (ancestry.languages?.optional || [])
-    .filter((l, i, a) => a.indexOf(l) === i)
-    .map((url) => {
-      return languages.find((l) => l.url === url);
-    })
-    .filter((i) => i !== undefined);
-
-  $: additionalLanguages = `${
-    ancestry.languages?.additional || 0
-      ? ancestry.languages?.additional + ' + '
-      : ''
-  }INT modifier`;
-
   $: {
-    languages = [];
     const allLanguages = [
       ...(ancestry.languages?.known || []),
       ...(ancestry.languages?.optional || []),
     ];
 
-    filterCollection('data', [
-      { key: 'type', value: 'language' },
-      { key: 'url', value: allLanguages, operator: 'in' },
-    ]).then((data) => {
-      languages = data;
-    });
+    if (allLanguages.length > 0) {
+      filterCollection('data', [
+        { key: 'type', value: 'language' },
+        { key: 'url', value: allLanguages, operator: 'in' },
+      ]).then((data) => {
+        languages = data;
+      });
+    }
   }
 
-  // Traits
   let traits = [];
   $: {
-    traits = [];
-    filterCollection('data', [
-      { key: 'type', value: 'trait' },
-      { key: 'url', value: ancestry.traits, operator: 'in' },
-    ]).then((data) => {
-      traits = data;
-    });
+    if (ancestry?.traits?.length > 0) {
+      filterCollection('data', [
+        { key: 'type', value: 'trait' },
+        { key: 'url', value: ancestry.traits, operator: 'in' },
+      ]).then((data) => {
+        traits = data;
+      });
+    }
+  }
+
+  $: {
+    sidebar = [];
+
+    const sbLanguages = {
+      known: (ancestry.languages?.known || [])
+        .filter((l, i, a) => a.indexOf(l) === i)
+        .map((url) => {
+          return languages.find((l) => l.url === url);
+        })
+        .filter((i) => i !== undefined),
+      optional: (ancestry.languages?.optional || [])
+        .filter((l, i, a) => a.indexOf(l) === i)
+        .map((url) => {
+          return languages.find((l) => l.url === url);
+        })
+        .filter((i) => i !== undefined),
+      additional: `${
+        ancestry.languages?.additional || 0
+          ? ancestry.languages?.additional + ' + '
+          : ''
+      }INT modifier`,
+    };
+
+    if (ancestry.hp) {
+      sidebar.push({
+        title: 'Hit Points',
+        value: ancestry.hp,
+      });
+    }
+
+    if (ancestry.size) {
+      sidebar.push({
+        title: 'Size',
+        value: ancestry.size.charAt(0).toUpperCase() + ancestry.size.slice(1),
+      });
+    }
+
+    if (ancestry.speed) {
+      sidebar.push({
+        title: 'Speed',
+        value: `${ancestry.speed} ft`,
+      });
+    }
+
+    if (sbLanguages.known.length) {
+      sidebar.push({
+        title: 'Known Languages',
+        list: sbLanguages.known.map((l) => l.name),
+      });
+    }
+
+    if (sbLanguages.optional.length) {
+      sidebar.push({
+        title: 'Additional Languages',
+        value:
+          sbLanguages.additional +
+          (sbLanguages.optional.length > 0 ? ' from:' : ''),
+        list: sbLanguages.optional.map((l) => l.name),
+      });
+    }
+
+    if (ancestry?.senses?.length > 0) {
+      sidebar.push({
+        title: 'Senses',
+        list: ancestry.senses.map((s) => {
+          console.log(s);
+          const sense = s.type.charAt(0).toUpperCase() + s.type.slice(1);
+          if (s.precision === 'precise') {
+            return sense;
+          }
+
+          return `${sense} (${s.precision})`;
+        }),
+      });
+    }
+
+    if (traits?.length > 0) {
+      sidebar.push({
+        title: 'Traits',
+        list: traits.map((t) => t.name),
+      });
+    }
   }
 </script>
 
@@ -83,66 +150,30 @@
 
     <!-- Info -->
     <aside class="sidebar">
-      <dl class="sidebar--list">
-        <div class="sidebar--list-item">
-          <dt><div class="sidebar--ribbon">Hit Points</div></dt>
-          <dd>{ancestry.hp}</dd>
-        </div>
-
-        <div class="sidebar--list-item">
-          <dt><div class="sidebar--ribbon">Size</div></dt>
-          <dd>
-            {ancestry.size.charAt(0).toUpperCase() + ancestry.size.slice(1)}
-          </dd>
-        </div>
-        <div class="sidebar--list-item">
-          <dt><div class="sidebar--ribbon">Speed</div></dt>
-          <dd>{ancestry.speed} ft</dd>
-        </div>
-        {#if knownLanguages.length}
-          <div class="sidebar--list-item">
-            <dt><div class="sidebar--ribbon">Known Languages</div></dt>
-            <dd>
-              <ul>
-                {#each knownLanguages as language}
-                  <li>{language.name}</li>
-                {/each}
-              </ul>
-            </dd>
-          </div>
-        {/if}
-        {#if additionalLanguages}
-          <div class="sidebar--list-item">
-            <dt><div class="sidebar--ribbon">Additional Languages</div></dt>
-            <dd>
-              <p>
-                {additionalLanguages}{optionalLanguages.length > 0
-                  ? ' from:'
-                  : ''}
-              </p>
-              {#if optionalLanguages.length}
-                <ul>
-                  {#each optionalLanguages as language}
-                    <li>{language.name}</li>
-                  {/each}
-                </ul>
+      {#if sidebar.length}
+        <dl class="sidebar--list">
+          {#each sidebar as item}
+            <div class="sidebar--list-item">
+              <dt><div class="sidebar--ribbon">{item.title}</div></dt>
+              {#if item.value && !item.list}
+                <dd>{item.value}</dd>
               {/if}
-            </dd>
-          </div>
-        {/if}
-        {#if traits.length}
-          <div class="sidebar--list-item">
-            <dt><div class="sidebar--ribbon">Traits</div></dt>
-            <dd>
-              <ul>
-                {#each traits as trait}
-                  <li>{trait.name}</li>
-                {/each}
-              </ul>
-            </dd>
-          </div>
-        {/if}
-      </dl>
+              {#if item.list}
+                <dd>
+                  {#if item.value}
+                    <p>{item.value}</p>
+                  {/if}
+                  <ul>
+                    {#each item.list as listitem}
+                      <li>{listitem}</li>
+                    {/each}
+                  </ul>
+                </dd>
+              {/if}
+            </div>
+          {/each}
+        </dl>
+      {/if}
       <a class="prd" href={ancestry.prd}>PRD</a>
     </aside>
   </div>
