@@ -7,7 +7,4 @@
 /// Components
 @import 'components/root';
 @import 'components/classes';
-
-a {
-  color: var(--theme-text);
-}
+@import 'components/type';
