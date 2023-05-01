@@ -23,10 +23,21 @@
     --rarity-#{$rarity}: var(--#{$color});
   }
 
+  --spacing: clamp(1rem, 5vw, 2rem);
+
+  font-family: 'Lato', sans-serif;
+  // font-weight: 200;
   background-color: var(--theme-body);
   color: var(--theme-text);
 }
 
 * {
   box-sizing: border-box;
+}
+
+img,
+video,
+picture {
+  max-width: 100%;
+  height: auto;
 }
