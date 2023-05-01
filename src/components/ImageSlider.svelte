@@ -8,7 +8,6 @@
    */
   function scrollIntoView(e) {
     const target = document.querySelector(e.target.value);
-    console.log(target);
     if (target.scrollIntoViewIfNeeded) {
       target.scrollIntoViewIfNeeded({ behavior: 'smooth' });
     } else {
@@ -17,7 +16,7 @@
   }
 </script>
 
-{#if images.length}
+{#if images?.length}
   <aside class="image-slider">
     <div class="image-slider--images">
       {#each images as image, i}
@@ -56,11 +55,13 @@
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
+      gap: 2rem;
     }
 
     &--image {
       scroll-snap-align: start;
       filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+      object-fit: contain;
     }
 
     &--links {
