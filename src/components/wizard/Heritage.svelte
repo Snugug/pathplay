@@ -47,15 +47,15 @@
                 return acc;
               },
               [[], [], []],
-            );
+            )
+            .flat();
         }
         return her;
       })
       .then((her) => {
-        console.log(her);
         if (her.length > 0) {
-          source.set(her.flat());
-          results.set(her.flat());
+          source.set(her);
+          results.set(her);
         }
       });
 
@@ -97,7 +97,7 @@
   }
 </script>
 
-<details open bind:this={details}>
+<details bind:this={details}>
   <summary><span class="position">{@html Expand}</span>Heritage</summary>
   <div class="wizard">
     <div class="filter">
