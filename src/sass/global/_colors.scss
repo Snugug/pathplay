@@ -80,6 +80,7 @@ $rarities: (
 $class-colors: (
   alchemist: 'green',
   barbarian: 'dark-red',
+  'barbarian-text': 'light-grey',
   bard: 'light-pink',
   champion: 'purple',
   cleric: 'light-purple',
@@ -91,14 +92,18 @@ $class-colors: (
   magus: 'dark-teal',
   monk: 'light-teal',
   oracle: 'dark-purple',
+  'oracle-text': 'light-grey',
   psychic: 'yellow',
   ranger: 'light-green',
   rogue: 'black',
+  'rogue-text': 'medium-grey',
   sorcerer: 'light-blue',
   summoner: 'light-yellow',
   swashbuckler: 'teal',
   thaumaturge: 'dark-pink',
+  'thaumaturge-text': 'light-grey',
   witch: 'dark-blue',
+  'witch-text': 'light-grey',
   wizard: 'blue',
 );
 
