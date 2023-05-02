@@ -35,8 +35,32 @@
     }
   }
 
+  /**
+   * Returns the trained level of a proficiency
+   * @param {string} l
+   * @return {string}
+   */
+  function trainedLevel(l) {
+    switch (l) {
+      case 'U':
+        return 'Untrained';
+      case 'T':
+        return 'Trained';
+      case 'E':
+        return 'Expert';
+      case 'M':
+        return 'Master';
+      case 'L':
+        return 'Legendary';
+      default:
+        return 'Untrained';
+    }
+  }
+
   $: {
     sidebar = [];
+
+    console.log(ancestry);
 
     const sbLanguages = {
       known: (ancestry.languages?.known || [])
@@ -58,10 +82,99 @@
       }INT modifier`,
     };
 
+    if (ancestry.ability) {
+      sidebar.push({
+        title: 'Key Ability',
+        value: ancestry.ability
+          .map((a) => {
+            return a.charAt(0).toUpperCase() + a.slice(1);
+          })
+          .join(' or '),
+      });
+    }
+
     if (ancestry.hp) {
       sidebar.push({
         title: 'Hit Points',
-        value: ancestry.hp,
+        value:
+          ancestry.hp + `${ancestry.type === 'class' ? ' + CON modifier' : ''}`,
+      });
+    }
+
+    if (ancestry.proficiencies?.saves) {
+      sidebar.push({
+        title: 'Saves',
+        list: Object.entries(ancestry.proficiencies.saves).map(
+          ([k, v]) =>
+            `${k.charAt(0).toUpperCase() + k.slice(1)} - ${trainedLevel(v)}`,
+        ),
+      });
+    }
+
+    if (ancestry.proficiencies?.attacks) {
+      // TODO: Something if "Other" is a reference
+      sidebar.push({
+        title: 'Attacks',
+        list: Object.entries(ancestry.proficiencies.attacks)
+          .filter(([k, v]) => Array.isArray(v) || v !== 'U')
+          .map(([k, v]) => {
+            if (Array.isArray(v)) {
+              if (v.length > 0) {
+                return v.map((a) => {
+                  if (a.url) {
+                    return `${a.url} - ${trainedLevel(a.level)}`;
+                  }
+                  return `${
+                    a.category.charAt(0).toUpperCase() + a.category.slice(1)
+                  } ${
+                    a.group.charAt(0).toUpperCase() + a.group.slice(1)
+                  } - ${trainedLevel(a.level)}`;
+                });
+              }
+              return '';
+            }
+
+            return `${k.charAt(0).toUpperCase() + k.slice(1)} - ${trainedLevel(
+              v,
+            )}`;
+          })
+          .flat(),
+      });
+    }
+
+    if (ancestry.proficiencies?.defenses) {
+      sidebar.push({
+        title: 'Defenses',
+        list: Object.entries(ancestry.proficiencies.defenses).map(
+          ([k, v]) =>
+            `${k.charAt(0).toUpperCase() + k.slice(1)} - ${trainedLevel(v)}`,
+        ),
+      });
+    }
+
+    if (ancestry.proficiencies?.perception) {
+      sidebar.push({
+        title: 'Perception',
+        value: trainedLevel(ancestry.proficiencies.perception),
+      });
+    }
+
+    if (ancestry.skills) {
+      let skillProf = ancestry?.proficiencies?.skills;
+      if (skillProf && Object.keys(skillProf).length > 0) {
+        skillProf = Object.keys(skillProf).map(
+          (s) => s.charAt(0).toUpperCase() + s.slice(1),
+        );
+      } else {
+        skillProf = null;
+      }
+      console.log(skillProf);
+      sidebar.push({
+        title: 'Skill Training',
+        value: `${
+          ancestry.skills || 0 ? ancestry.skills + ' + ' : ''
+        }INT modifier${skillProf ? ' plus:' : ''}`,
+        list: skillProf,
       });
     }
 
@@ -118,12 +231,20 @@
       });
     }
   }
+
+  $: color =
+    ancestry.type === 'class'
+      ? `--${ancestry.name.toLowerCase()}`
+      : `--rarity-${ancestry.rarity}`;
 </script>
 
-<article class="ancestry" style={`--bkg: var(--rarity-${ancestry.rarity})`}>
+<article
+  class="ancestry"
+  style={`--bkg: var(${color}); --clr: var(--${ancestry.name.toLowerCase()}-text)`}
+>
   <div class="container">
     <h2 class="title type--h2">
-      <Ribbon color={`--rarity-${ancestry.rarity}`}>
+      <Ribbon {color}>
         <span class="title--inner">
           {ancestry.name}
         </span>
@@ -135,6 +256,10 @@
         <ImageSlider images={ancestry.images} />
       </div>
       {@html ancestry.description}
+
+      {#if ancestry.sidebar}
+        <aside class="item-sidebar">{@html ancestry.sidebar}</aside>
+      {/if}
 
       {#if ancestry.features?.length}
         <ul>
@@ -210,6 +335,7 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+      color: var(--clr, var(--black));
     }
   }
 
@@ -258,7 +384,7 @@
     &--ribbon {
       font-weight: bold;
       background-color: var(--bkg);
-      color: var(--black);
+      color: var(--clr, var(--black));
       padding: 0.15rem;
       padding-inline-start: 1.5rem;
       transform: translateX(calc(-0.5rem - 1px));

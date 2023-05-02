@@ -3,6 +3,7 @@
   import { structure } from '$lib/characters';
   import AncestryWizard from '$components/wizard/Ancestry.svelte';
   import HeritageWizard from '$components/wizard/Heritage.svelte';
+  import ClassWizard from '$components/wizard/Class.svelte';
   import Missing from '$icons/cancel.svg?raw';
   import Done from '$icons/check_circle.svg?raw';
   import { writable } from 'svelte/store';
@@ -34,10 +35,13 @@
         push('/characters/new');
         return;
       }
-      if (a.ancestry.id) {
-        db.data.get(a.ancestry.id).then((b) => {
-          choices.set(Object.assign($choices, { ancestry: b }));
-        });
+
+      for (const [key, value] of Object.entries(a)) {
+        if (value?.id) {
+          db.data.get(value.id).then((b) => {
+            choices.set(Object.assign($choices, { [key]: b }));
+          });
+        }
       }
       character.set(a);
     });
@@ -104,6 +108,7 @@
 
 <AncestryWizard />
 <HeritageWizard />
+<ClassWizard />
 
 <style lang="scss">
   .meta {
