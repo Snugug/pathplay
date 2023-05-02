@@ -1,0 +1,530 @@
+[
+  {
+    "name": "Half-Elf",
+    "slug": "half-elf",
+    "id": 7,
+    "type": "half-human-heritage",
+    "url": "/ancestries/7",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=7",
+    "rarity": "common",
+    "level": null,
+    "traits": [
+      "/traits/58",
+      "/traits/85",
+      "/traits/91"
+    ],
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 55,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p><em>A half-elf is born to an elf and a human, or to two half-elves. The life of a half-elf can be difficult, often marked by a struggle to fit in. Half-elves don’t have their own homeland on Golarion, nor are populations of half-elves particularly tied to one another, since they often have very disparate human and elven traditions. Instead, most half-elves attempt to find acceptance in either human or elven settlements.</em></p>\n<p><em>Half-elves often appear primarily human, with subtly pointed ears and a taller stature than most full-blooded humans. Half-elves lack the almost alien eyes of their elf parents, though they do have a natural presence—and often a striking beauty— that leads many to become artists or entertainers. Despite this innate appeal, many half-elves have difficulty forming lasting bonds with either humans or elves due to the distance they feel from both peoples as a whole.</em></p>\n<p><em>Half-elves live longer than other humans, often reaching an age around 150 years. This causes some of them to fear friendship and romance with humans, knowing that they’ll likely outlive their companions.</em></p>\n<p>You can create a half-elf character by selecting the <a href=\"/heritages/26\">half-elf heritage</a> at 1st level. This gives you access to elf and half-elf ancestry feats in addition to human ancestry feats.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/HalfElf01.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Half-Orc",
+    "slug": "half-orc",
+    "id": 8,
+    "type": "half-human-heritage",
+    "url": "/ancestries/8",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=8",
+    "rarity": "common",
+    "level": null,
+    "traits": [
+      "/traits/86",
+      "/traits/91",
+      "/traits/124"
+    ],
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 55,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p><em>A half-orc is the offspring of a human and an orc, or of two half-orcs. Because some intolerant people see orcs as more akin to monsters than people, they sometimes hate and fear half-orcs simply due to their lineage. This commonly pushes half-orcs to the margins of society, where some find work in manual labor or as mercenaries, and others fall into crime or cruelty. Many who can’t stand the indignities heaped on them in human society find a home among their orc kin or trek into the wilderness to live in peace, apart from society’s judgment.</em></p>\n<p><em>Humans often assume half-orcs are unintelligent or uncivilized, and half-orcs rarely find acceptance among societies with many such folk. To an orc tribe, a half-orc is considered smart enough to make a good war leader but weaker physically than other orcs. Many half-orcs thus end up having low status among orc tribes unless they can prove their strength.</em></p>\n<p><em>A half-orc has a shorter lifespan than other humans, living to be roughly 70 years old.</em></p>\n<p>You can create a half-orc character by selecting the <a href=\"/heritages/27\">half-orc heritage</a> at 1st level. This gives you access to orc and half-orc ancestry feats in addition to human ancestry feats.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/HalfOrc01.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Changeling",
+    "slug": "changeling",
+    "id": 22,
+    "type": "versatile-heritage",
+    "url": "/ancestries/22",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=22",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/212"
+    ],
+    "source": [
+      {
+        "name": "Advanced Player's Guide",
+        "id": 39,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=39",
+        "page": 30,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Tales of children stolen away and replaced by monsters exist across countless cultures— but the true monsters are the hag mothers of these strange children. After the hag seduces, uses, and disposes of their father, the changeling child is usually abandoned in their father’s community to be raised among them. Such a child faces no end of challenges, often beginning life as an orphaned outsider.</em></p>\n<p>Though a changeling generally resembles a member of their father's ancestry, their distinctive eyes—each a different color—set them apart. One of their eyes matches that of their father's lineage, while the other matches the color of their <a href=\"/monster-families/59\">hag</a> mother's, often in an unnatural shade such as violet or a vivid green. Not everyone with differently colored eyes is a changeling, but this manifestation of changeling heritage makes it difficult for them to hide their nature and can lead to banishment from their community. As they come of age, they manifest other characteristics from their mother, including supernatural abilities. Darkvision, clawlike fingernails, and innate magic are the most common, but stranger abilities specific to the hag mother can also arise.</p>\n<p>Changelings can be any gender, but women in particular are vulnerable to the Call, a psychic influence that urges them to abandon their mortal life, join the hag's coven, and eventually become a hag. Changelings who understand their heritage often fear the Call and work to resist its pull. Those who remain ignorant of their origin may find themselves subject to a terrible compulsion without knowing why.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Changeling01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Changeling02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Dhampir",
+    "slug": "dhampir",
+    "id": 23,
+    "type": "versatile-heritage",
+    "url": "/ancestries/23",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=23",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/215"
+    ],
+    "source": [
+      {
+        "name": "Advanced Player's Guide",
+        "id": 39,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=39",
+        "page": 32,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Many call vampires the children of the night, but it is dhampirs who can truly claim that title. These mortal offspring of vampires walk the line between life and undeath not just physiologically, but also in their social standing, temperament, and worldview.</em></p>\n<p>The circumstances surrounding a dhampir's birth are rare, complex, and often shrouded in horrific rumors stoked by societal revulsion at the idea of an undead monstrosity producing mortal offspring. Some dhampirs are the child of one mortal and one <a href=\"/monster-families/97\">vampiric</a> parent, while others are born to those who were turned into vampires while pregnant. Still others rise from dark rituals or other supernatural influences that impose a vampiric curse onto a mortal infant. The life of a dhampir is often difficult: few vampiric parents have the time or inclination to raise a mortal child, while mortal communities find a dhampir's sallow flesh, piercing eyes, and unnerving presence off-putting at best.</p>\n<p>Despite being living creatures, dhampirs respond to positive and negative energy as if they were undead, making them unwelcome in many holy communities and often driving them toward necromantic arts. Dhampirs aren't immortal, but age far more slowly than most mortals, with a lifespan similar to that of an elf. Dhampirs have difficulty producing children of their own, and those few born to a dhampir are never dhampirs themselves.</p>\n<p>A dhampir generally resembles a member of their non-vampire parent's ancestry, but with a ghostly pallor and eyes so light it seems they have only pinpoint pupils and no iris. All dhampirs have elongated incisors, some nearly as long as those of a true vampire. Many command grace, beauty, and charm, despite their unsettling appearance.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Dhampir01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Dhampir02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Aasimar",
+    "slug": "aasimar",
+    "id": 24,
+    "type": "versatile-heritage",
+    "url": "/ancestries/24",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=24",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/256"
+    ],
+    "source": [
+      {
+        "name": "Advanced Player's Guide",
+        "id": 39,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=39",
+        "page": 34,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Born with the power of benevolent celestial entities, aasimars are thought to be supremely blessed with strength of will, extraordinary beauty, and innate magical gifts. But many aasimars find that these perceived talents—whether they actually have them or not—set them apart from their friends and family, fostering loneliness in themselves and jealousy in others.</em></p>\n<p>Aasimars with a positive outlook face these challenges by serving their communities, populating the environment with kindness or artwork, or simply supporting those who are less fortunate. Some aasimars hold a more hostile worldview, however, and risk falling into resentment, despair, or even the temptations of evil. Even then, the stereotypes surrounding an aasimar cling close, causing others to view them as tragic figures in need of redemption.</p>\n<p>The powers and physical appearances passed down from celestial beings vary according to an aasimar's lineage. Those who descend from <a href=\"/monster-families/9\">archons</a> are sometimes known as lawbringers, while those who possess <a href=\"/monster-families/3\">angelic</a> blood are called angelkin, and those related to <a href=\"/monster-families/10\">azatas</a> are referred to as musetouched.</p>\n<p>If you want a character brimming with celestial power, unique physical characteristics and the potential for strong faith, you should play an aasimar.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Aasimar01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Aasimar02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Duskwalker",
+    "slug": "duskwalker",
+    "id": 25,
+    "type": "versatile-heritage",
+    "url": "/ancestries/25",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=25",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/257"
+    ],
+    "source": [
+      {
+        "name": "Advanced Player's Guide",
+        "id": 39,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=39",
+        "page": 37,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>The first duskwalkers manifested as the result of a bargain between two powerful <a href=\"/monster-families/83\">psychopomps</a>, the immortal guardians and guides of souls after death. One believed that certain souls who helped preserve the cycle of life and death but had their own lives cut short deserved reincarnation, while the other felt this would too greatly violate that same cycle. In the end, the duskwalkers rose from a concession between the two that allowed such rebirths to occur but limited their frequency—only a finite number of duskwalkers ever exist at any one point in time.</em></p>\n<p>When they were first created by psychopomps, duskwalkers were expected to perform roles that would serve the goddess of death, <a href=\"/deities/14\">Pharasma</a>, and by extension her realm, the <a href=\"/planes/15\">Boneyard</a>. But now duskwalkers have found themselves with more freedom of choice and after a century, have only now come to terms with the fact that their destinies are their own to choose. As they are created, not born, most duskwalkers either struggle to integrate with society or seek out communities and organizations to serve as a surrogate family.</p>\n<p>Duskwalkers have an inherent understanding of the cycle of life and death. In most cases this manifests as a deep respect for that cycle and pushes the duskwalker toward occupations that help them to protect it, such as hunters of the undead, midwives, morticians, and priests.</p>\n<p>If you want a character who has a mysterious background, seeks a society or organization to join, or looks to fight against undead, you should play a duskwalker.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Duskwalker01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Duskwalker02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Tiefling",
+    "slug": "tiefling",
+    "id": 26,
+    "type": "versatile-heritage",
+    "url": "/ancestries/26",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=26",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/258"
+    ],
+    "source": [
+      {
+        "name": "Advanced Player's Guide",
+        "id": 39,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=39",
+        "page": 39,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>When the influence of a demon, devil, or other fiend infiltrates the bloodline of a mortal family, tieflings are the inevitable result. Tieflings carry the sinister mark of the fiendish planes upon their flesh, and their specific abilities and physical qualities vary according to their heritage. Hellspawn are those who descend from <a href=\"/monster-families/30\">devils</a>, grimspawn hail from <a href=\"/monster-families/26\">daemonic</a> influences, and pitborn bear the influence of <a href=\"/monster-families/28\">demons</a>, though these are only the three most common among a wide variety of tiefling lineages.</em></p>\n<p>Generations might pass between a fiend’s direct influence and the time a tiefling child is born. For those born to ignorant or fearful parents, childhood is particularly hard, but even those whose families accept and nurture them face fear and prejudice from society as a whole. In some cases, this rejection encourages a tiefling to embrace the evil within their heritage, though others carve out a place and live a fulfilling life despite the challenges facing them.</p>\n<p>If you want a character who is supernaturally infused with sinister forces, might have a unique appearance, and can fill the role of a complicated or unexpected hero, you should play a tiefling.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Tiefling01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Tiefling02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Aphorite",
+    "slug": "aphorite",
+    "id": 28,
+    "type": "versatile-heritage",
+    "url": "/ancestries/28",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=28",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/335"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 74,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Once perfectly identical beings who bridged the gap between Axis's perfect order and mortals' unrestricted existence, aphorites are now lit more by the spark of free will than the beacon of cosmic law.</em></p>\n<p>Aphorites were first forged by <a href=\"/monsters/7\">axiomites</a>, the primary inhabitants of the Eternal City of <a href=\"/planes/14\">Axis</a>, the plane of pure law. The original aphorites served as liaisons between their lawful progenitors and frustratingly unpredictable mortal allies. Marrying the logical thought processes of conformity to law and the gift of self-determination, early aphorites spread across the <a href=\"/planes/1\">Material Plane</a> to serve as Axis's proxies and enact its will. Over time, their appearances and personalities grew to resemble their mortal comrades as they were increasingly born among mortals. Aphorites still exhibit Axis's touch in their metallic skin coated in crystalline dust, aptitude for logic, strength in artisanship, and propensity for order and cooperation. But despite these links to their purpose-built origins, contemporary aphorites are undoubtedly their own masters.</p>\n<p>If you want to play a character intrinsically tied to the underlying order of the universe, walking the thin line between calculated predestination and free will, you should play an aphorite.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Aphorite01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Aphorite02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Beastkin",
+    "slug": "beastkin",
+    "id": 29,
+    "type": "versatile-heritage",
+    "url": "/ancestries/29",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=29",
+    "rarity": "rare",
+    "level": null,
+    "traits": [
+      "/traits/20",
+      "/traits/337"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 78,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Beastkin have extraordinary abilities derived from the animal world, allowing them to partially or fully transform into animals, granting them deadly fangs, refined senses, and other such traits. A beastkin treads the line between nature and society, living with a foot in each.</em></p>\n<p>Beastkin is a blanket term for any person who has gained the ability to partially or fully transform into an animal through any number of means, while maintaining a balance with their humanoid side. Most beastkin are born of <a href=\"/monster-families/100\">werecreatures</a> or have a werecreature ancestor in their lineage. The curse might not always fully manifest in the child of the werecreature pairing, giving the child the transformative nature of their lineage without a weakness to <a href=\"/equipment/379\">silver</a> or a loss of control during the full moon. Born or made, werecreatures usually hold such beastkin in high regard, as they embody many of their strengths without any of their weaknesses.</p>\n<p>Aside from werecreatures, there are various other paths to becoming a beastkin. In some cases, a deity or a nature spirit may grant a chosen individual the power to transform. Others have gained the powers of beastkin through a trick of the fey or an unusual reaction to polymorph magic. There are even rumors that some rare beastkin might be shapeshifting animals that somehow gained the form of a sapient ancestry, rather than the other way around.</p>\n<p>If you want a character that treads the boundaries between rationality and instinct, at home in both society and the wilds yet set apart from both, you should play a beastkin.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Beastkin01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Beastkin02.png",
+        "alt": ""
+      }
+    ],
+    "actions": [
+      "/actions/700"
+    ]
+  },
+  {
+    "name": "Ganzi",
+    "slug": "ganzi",
+    "id": 32,
+    "type": "versatile-heritage",
+    "url": "/ancestries/32",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=32",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/339"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 94,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Children of chaos, ganzis are born of the roiling effervescence of the untamable Maelstrom, the primal sea of all creation. Their blood crackles with the promise of change and the raw power of creation unshackled.</em></p>\n<p>While some ganzis are born of mortals who mingled with the inchoate beings of the <a href=\"/planes/19\">Maelstrom</a>, and some are descended from those who sailed that cerulean void, many others are born in places where the <a href=\"/planes/1\">Material Plane</a> frays toward chaos. Whatever their roots, all ganzis share the same potent essence.</p>\n<p>More than any other planar scions, ganzis are prone to appearing in otherwise stolid and unremarkable bloodlines. While this is sometimes cause for scandal in less open-minded communities, most ganzi children grow up as happy and loved as any other child. Ganzi children often exhibit irrepressible energy and good-natured mischief. A few even grow out of these tendencies eventually.</p>\n<p>If you want a character that channels the spontaneous and the unpredictable, that defies categorization while still finding commonality with other nonconformists, you should play a ganzi.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Ganzi01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Ganzi02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Ifrit",
+    "slug": "ifrit",
+    "id": 33,
+    "type": "versatile-heritage",
+    "url": "/ancestries/33",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=33",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/301"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 100,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Ifrits descend from creatures such as <a href=\"/monsters/214\">efreet</a>, <a href=\"/monsters/189\">salamanders</a>, and <a href=\"/monster-families/178\">magma dragons</a>. Their spark of ancestral flame gives them a reputation for being passionate, if not capricious.</em></p>\n<p>Ifrits often build up personal relationships between themselves and the idea of fire, feeling as though they embody it mentally or spiritually, in addition to physically. Some ifrits relate to fire's mutable energy, illuminating properties, or destructive nature.</p>\n<p>Some ifrits share a connection from birth to specific aspects of elemental fire, such as radiance, ash, or lava; this is called an ifrit lineage. Ifrits often have the same lineage as their parents, though sometimes ifrits are born with lineages different from their families, or to parents without one. Lineages can appear in ifrit children as a reflection of where they were born—for example, cindersoul ifrits sometimes originate from being born in areas prone to forest fires. They can also occur as a reflection of the ifrit's planar ancestry, such as a brightsoul ifrit having a fire-themed celestial ancestor like a <a href=\"/monsters/1262\">peri</a>. Magma ifrits with the lavasoul lineage are most often born the descendants of <a href=\"/monster-families/178\">magma dragons</a> or other lava-themed <a href=\"/monster-families/43\">fire elementals</a>.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Ifrit01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Ifrit02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Oread",
+    "slug": "oread",
+    "id": 34,
+    "type": "versatile-heritage",
+    "url": "/ancestries/34",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=34",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/304"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 104,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>The <a href=\"/planes/5\">Plane of Earth's</a> influence runs through an oread's family, most often from a <a href=\"/monsters/213\">shaitan</a> or <a href=\"/monster-families/177\">crystal dragon</a> ancestor. Oreads tend to be stoic, steadfast, and dependable, but they contain depths not seen on the surface.</em></p>\n<p>Oreads can be slow to reveal their true selves, or perhaps more accurately, have enough depth and mystery inherent to their beings that they can reveal new and unexpected facets of themselves every day. They usually feel that they personify certain aspects of earth, stone, or other sediments or minerals, such as a cliff's tenacious resilience against erosion, the generosity and nourishment of fertile soil, or the versatile utility of metal and stone.</p>\n<p>Oreads born with a special connection to a specific subset of elemental earth, such as crystal, dust, or mud, might have an oread lineage. A lineage can be inherited along a family bloodline, or it can manifest spontaneously in oread children. They can be caused by where an oread's ancestors lived, frequently seen in dustsoul oreads, many of whom are born in a desert or to a family that has farmed for generations. Lineages can also be the result of specific planar heritages. Gemsoul oreads often have a crystal dragon in their lineage, and miresoul oreads descend from the more sodden creatures of <a href=\"/monster-families/42\">elemental earth</a>.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Oread01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Oread02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Suli",
+    "slug": "suli",
+    "id": 35,
+    "type": "versatile-heritage",
+    "url": "/ancestries/35",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=35",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/310"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 108,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Sulis are geniekin who embody a mixture of elements, most commonly air, earth, fire, and water. They are typically the descendants of jann, genies of all four elements that wander the <a href=\"/planes/1\">Material Plane</a> instead of making a home on the Elemental Planes.</em></p>\n<p>At birth, a suli resembles their mortal ancestry, not manifesting their otherworldly heritage until adolescence, when they awaken into their elemental power. Strong in body and will, sulis are dynamic and ever-changing, and most feel they embody either all the elements together at once or the traits of different elements at different times. Some see themselves as having multiple aspects or faces to their personalities—one for each element—that they cycle through over the course of days or weeks.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Suli01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Suli02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Sylph",
+    "slug": "sylph",
+    "id": 36,
+    "type": "versatile-heritage",
+    "url": "/ancestries/36",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=36",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/311"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 112,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>Sylphs are an intense and lively people, flighty and tempestuous. These planar scions have kinship to beings of elemental air such as <a href=\"/monsters/212\">djinni</a>, <a href=\"/monsters/179\">invisible stalkers</a>, and <a href=\"/monster-families/176\">cloud dragons</a>.</em></p>\n<p>Sylphs enjoying following their own tempos, shifting between wild energy that draws all eyes to embodying the spirit of unseen breezes that slip away without note. They often build their identities around their perceived personal connection to the element of air, relating to a gentle breeze, a sudden flash of lightning, or an uncontrollable storm.</p>\n<p>Some sylphs are born with a connection to an extremely focused aspect of elemental air, such as smoke, storms, or toxic gas. While it does happen, a child is rarely born with a lineage that differs from their parents', as geniekin typically pass these unusual gifts on to their offspring. Lineages can manifest in sylph children as a result of where they're born, such as when stormsoul sylphs are birthed in regions prone to tornadoes or windstorms. A lineage can also reflect a sylph's elemental heritage like in smokesoul sylphs, who often descend from <a href=\"/monsters/648\">belkers</a>. Fumesoul sylphs, on the other hand, are associated with poisonous and otherwise unbreathable gases.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Sylph01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Sylph02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Undine",
+    "slug": "undine",
+    "id": 37,
+    "type": "versatile-heritage",
+    "url": "/ancestries/37",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=37",
+    "rarity": "uncommon",
+    "level": null,
+    "traits": [
+      "/traits/207",
+      "/traits/314"
+    ],
+    "source": [
+      {
+        "name": "Ancestry Guide",
+        "id": 74,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=74",
+        "page": 116,
+        "version": "2.0"
+      }
+    ],
+    "description": "<p><em>These dynamic, fluid mortals trace their ancestry to creatures from the <a href=\"/planes/7\">Plane of Water</a>, such as <a href=\"/monsters/215\">marids</a>, <a href=\"/monsters/195\">water mephits</a>, and <a href=\"/monster-families/175\">brine dragons</a>.</em></p>\n<p>Undines often go through life in a series of shifting phases, their interests waxing, waning, or sometimes morphing altogether as old loves are discarded for new interests. Structure provides a much-needed focus to undines' lives, and without strong goals or support from those around them, undines can find themselves stagnating in feelings of despondence. Most undines feel they personify specific aspects of water, some seeing themselves with the strength and power of the waves, the speed and tenacity of a river current, or the calm of a peaceful lake or pond. Others identify with all these aspects and more, their demeanors shifting like the tides from one situation to the next.</p>\n<p>Undines born with a connection only to a specific subtype of elemental water, such as ice, brine, or mist, might have a specific undine lineage. These are typically passed down from parent to child, as with other geniekin, but on occasion, a child is born with a lineage never seen in their family. Sometimes lineages are the result of where an undine's ancestors lived, such as rimesoul undines being born in the cold northern countries or at the tops of mountain peaks. At other times it can be related to the undine's elemental heritage, as is often the case with brinesoul undines, who usually descend from brine dragons. Mistsoul undines might have a distant but powerful connection to <a href=\"/monster-families/45\">elemental water</a>, or might even have a bit of <a href=\"/monster-families/41\">elemental air</a> mixed into their ancestry.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Undine01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Undine02.png",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "name": "Reflection",
+    "slug": "reflection",
+    "id": 51,
+    "type": "versatile-heritage",
+    "url": "/ancestries/51",
+    "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=51",
+    "rarity": "rare",
+    "level": null,
+    "traits": [
+      "/traits/431"
+    ],
+    "source": [
+      {
+        "name": "Dark Archive",
+        "id": 129,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=129",
+        "page": 119
+      }
+    ],
+    "description": "<p><em>Stories of malevolent duplicates are commonly told around campfires to frighten companions. In these tales, the duplicate forms after a botched ritual or exposure to a mysterious artifact, and is bent on replacing the creature they've replicated. Most believe such stories to be only that, but such reflection duplicates are real. While some wish to replace their progenitors, others merely want to forge a new life for themselves where no one knows of their origins.</em></p>\n<p>Methods of their creation vary, but all reflections are duplicates of someone else existing in the world. Some are drawn out from literal mirrors, developing a life of their own once set free from the Echoing Pale. Mirror-focused rituals or spells can create independent reflections, whether deliberately or accidentally, as can the magical hazard known as a <a href=\"/hazards/28\">darkside mirror</a>, which replaces those looking into it with malicious duplicates. Some reflections are created as magical clones by spellcasters, only to turn on their creators or be left adrift, while others arise from polymorph magic gone wrong.</p>\n<p>If you want a character who seeks to forge their own identity in the face of their duplicate nature, with a strong tie to another character somewhere out there in the world, you should play a reflection.</p>\n",
+    "images": [
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Reflection01.png",
+        "alt": ""
+      },
+      {
+        "src": "https://2e.aonprd.com/images/Ancestries/Reflection02.png",
+        "alt": ""
+      }
+    ]
+  }
+]

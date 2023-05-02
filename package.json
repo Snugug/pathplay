@@ -21,7 +21,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "prepare": "husky install",
     "predata:get": "del ./public/data",
-    "data:get": "node ./lib/collect.js"
+    "data:get": "node ./lib/utils/cluster.js"
   },
   "lint-staged": {
     "**/*.{svelte,astro}": "stylelint",
@@ -60,6 +60,7 @@
     "prettier": "^2.8.2",
     "prettier-plugin-svelte": "^2.9.0",
     "puppeteer": "^19.7.4",
+    "puppeteer-cluster": "^0.23.0",
     "sass": "^1.58.3",
     "sass-toolkit": "^2.10.2",
     "slugify": "^1.6.6",

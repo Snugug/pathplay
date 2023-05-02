@@ -1,0 +1,582 @@
+[
+  {
+    "name": "Acrobatics",
+    "slug": "acrobatics",
+    "id": 1,
+    "type": "skill",
+    "url": "/skills/1",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=1",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 240,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>Acrobatics measures your ability to perform tasks requiring coordination and grace. When you use the <a href=\"/actions/79\">Escape</a> basic action, you can use your Acrobatics modifier instead of your unarmed attack modifier.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Arcana",
+    "slug": "arcana",
+    "id": 2,
+    "type": "skill",
+    "url": "/skills/2",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=2",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 241,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>Arcana measures how much you know about arcane magic and creatures. Even if you’re untrained, you can Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Athletics",
+    "slug": "athletics",
+    "id": 3,
+    "type": "skill",
+    "url": "/skills/3",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=3",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 241,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>Athletics allows you to perform deeds of physical prowess. When you use the <a href=\"/actions/79\">Escape</a> basic action, you can use your Athletics modifier instead of your unarmed attack modifier.</p>\n<h2 id=\"table-44-climb-and-swim-distance\">Table 4–4: Climb And Swim Distance</h2>\n<p>This table provides a quick reference for how far you can move with a Climb or Swim action.</p>\n<h2 id=\"table-4-4-climb-and-swim-distance\">Table 4-4: Climb and Swim Distance</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Climb Distance</th>\n<th>Swim Distance</th>\n</tr>\n</thead>\n<tbody><tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Speed</strong></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Success</strong></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Critical Success</strong></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Success</strong></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Critical Success</strong></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>5-15 feet</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>5</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>5</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>5</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>10</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20-35 feet</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>5</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>10</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>10</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>15</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>40-55 feet</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>10</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>15</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>15</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>60-65 feet</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>15</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>25</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody></table>\n<h2 id=\"leap\">Leap</h2>\n<p>The <a href=\"/actions/81\">Leap</a> basic action is used for <a href=\"/actions/36\">High Jump</a> and <a href=\"/actions/37\">Long Jump</a>. Leap lets you take a careful, short jump. You can Leap up to 10 feet horizontally if your Speed is at least 15 feet, or up to 15 feet horizontally if your Speed is at least 30 feet. You land in the space where your Leap ends (meaning you can typically clear a 5-foot gap if your Speed is between 15 feet and 30 feet, or a 10-foot gap if your Speed is 30 feet or more). If you make a vertical Leap, you can move up to 3 feet vertically and 5 feet horizontally onto an elevated surface.</p>\n<h2 id=\"forced-movement\">Forced Movement</h2>\n<p>The Shove action can force a creature to move. When an effect forces you to move, or if you start falling, the distance you move is defined by the effect that moved you, not by your Speed. Because you're not acting to move, this doesn't trigger reactions triggered by movement.</p>\n<h3 id=\"falling\">Falling</h3>\n<p>When you fall more than 5 feet, you take falling damage when you land, which is bludgeoning damage equal to half the distance you fell. If you take any damage from a fall, you’re knocked prone when you land.</p>\n<p>If you fall into water, snow, or another soft substance, calculate the damage from the fall as though your fall were 20 feet shorter. The reduction can’t be greater than the depth of the water (so when falling into water that is only 10 feet deep, you treat the fall as 10 feet shorter). You can Grab an Edge as a reaction (page 472) to reduce or eliminate the damage from some falls. More detailed rules for falling damage appear on page 463.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Crafting",
+    "slug": "crafting",
+    "id": 4,
+    "type": "skill",
+    "url": "/skills/4",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=4",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 243,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You can use this skill to create, understand, and repair items. Even if you're untrained, you can Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Deception",
+    "slug": "deception",
+    "id": 5,
+    "type": "skill",
+    "url": "/skills/5",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=5",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 245,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You can trick and mislead others using disguises, lies, and other forms of subterfuge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Diplomacy",
+    "slug": "diplomacy",
+    "id": 6,
+    "type": "skill",
+    "url": "/skills/6",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=6",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 246,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You influence others through negotiation and flattery.</p>\n<h2 id=\"changing-attitudes\">Changing Attitudes</h2>\n<p>Your influence on NPCs is measured with a set of attitudes that reflect how they view your character. These are only a brief summary of a creature's disposition. The GM will supply additional nuance based on the history and beliefs of the characters you're interacting with, and their attitudes can change in accordance with the story. The attitudes are detailed on the <a href=\"/conditions\">Conditions</a> page and are summarized here.</p>\n<p>- \n<a href=\"/conditions/21\">Helpful</a>: Willing to help you and responds favorably to your requests.</p>\n<p>- \n<a href=\"/conditions/18\">Friendly</a>: Has a good attitude toward you, but won't necessarily stick their neck out to help you.</p>\n<p>- \n<a href=\"/conditions/25\">Indifferent</a>: Doesn't care about you either way. (Most NPCs start out indifferent.)</p>\n<p>- \n<a href=\"/conditions/40\">Unfriendly</a>: Dislikes you and doesn't want to help you.</p>\n<p>- \n<a href=\"/conditions/23\">Hostile</a>: Actively works against you—and might attack you just because of their dislike.</p>\n<p>No one can ever change the attitude of a player character with these skills. You can roleplay interactions with player characters, and even use Diplomacy results if the player wants a mechanical sense of how convincing or charming a character is, but players make the ultimate decisions about how their characters respond.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Intimidation",
+    "slug": "intimidation",
+    "id": 7,
+    "type": "skill",
+    "url": "/skills/7",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=7",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 247,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You bend others to your will using threats.</p>\n<h2 id=\"changing-attitudes\">Changing Attitudes</h2>\n<p>Your influence on NPCs is measured with a set of attitudes that reflect how they view your character. These are only a brief summary of a creature's disposition. The GM will supply additional nuance based on the history and beliefs of the characters you're interacting with, and their attitudes can change in accordance with the story. The attitudes are detailed on the <a href=\"/conditions\">Conditions</a> page and are summarized here.</p>\n<p>- \n<a href=\"/conditions/21\">Helpful</a>: Willing to help you and responds favorably to your requests.</p>\n<p>- \n<a href=\"/conditions/18\">Friendly</a>: Has a good attitude toward you, but won't necessarily stick their neck out to help you.</p>\n<p>- \n<a href=\"/conditions/25\">Indifferent</a>: Doesn't care about you either way. (Most NPCs start out indifferent.)</p>\n<p>- \n<a href=\"/conditions/40\">Unfriendly</a>: Dislikes you and doesn't want to help you.</p>\n<p>- \n<a href=\"/conditions/23\">Hostile</a>: Actively works against you—and might attack you just because of their dislike.</p>\n<p>No one can ever change the attitude of a player character with these skills. You can roleplay interactions with player characters, and even use Diplomacy results if the player wants a mechanical sense of how convincing or charming a character is, but players make the ultimate decisions about how their characters respond.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Lore",
+    "slug": "lore",
+    "id": 8,
+    "type": "skill",
+    "url": "/skills/8",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=8",
+    "source": [],
+    "description": "<p>You have specialized information on a narrow topic. Lore features many subcategories. You might have Military Lore, Sailing Lore, Vampire Lore, or any similar subcategory of the skill. Each subcategory counts as its own skill, so applying a skill increase to Planar Lore wouldn't increase your proficiency with Sailing Lore, for example.</p>\n<p>You gain a specific subcategory of the Lore skill from your background. The GM determines what other subcategories they'll allow as Lore skills, though these categories are always less broad than any of the other skills that allow you to <a href=\"/actions/26\">Recall Knowledge</a>, and they should never be able to fully or mainly take the place of another skill's Recall Knowledge action. For instance, you couldn't choose Magic Lore to recall the breadth of knowledge about magic covered by <a href=\"/skills/2\">Arcana</a>, <a href=\"/skills/10\">Nature</a>, <a href=\"/skills/11\">Occultism</a>, and <a href=\"/skills/13\">Religion</a>, or Adventuring Lore to give you all the information an adventurer needs, or Planar Lore to gain all the information spread across various skills and subcategories such as Heaven Lore.</p>\n<p>If you have multiple subcategories of Lore that could apply to a check or that would overlap with another skill in the circumstances, you can use the skill with the better skill modifier or the one you would prefer to use. If there's any doubt whether a Lore skill applies to a specific topic or action, the GM decides whether it can be used or not.</p>\n<p>Even if you're untrained in Lore, you can use it to Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Medicine",
+    "slug": "medicine",
+    "id": 9,
+    "type": "skill",
+    "url": "/skills/9",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=9",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 248,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You can patch up wounds and help people recover from diseases and poisons. Even if you’re untrained in Medicine, you can use it to Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Nature",
+    "slug": "nature",
+    "id": 10,
+    "type": "skill",
+    "url": "/skills/10",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=10",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 249,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You know a great deal about the natural world, and you command and train animals and magical beasts. Even if you’re untrained in Nature, you can use it to Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Occultism",
+    "slug": "occultism",
+    "id": 11,
+    "type": "skill",
+    "url": "/skills/11",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=11",
+    "source": [],
+    "description": "<p>You know a great deal about ancient philosophies, esoteric lore, obscure mysticism, and supernatural creatures. Even if you’re untrained in Occultism, you can use it to Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Performance",
+    "slug": "performance",
+    "id": 12,
+    "type": "skill",
+    "url": "/skills/12",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=12",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 250,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You are skilled at a form of performance, using your talents to impress a crowd or make a living.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Religion",
+    "slug": "religion",
+    "id": 13,
+    "type": "skill",
+    "url": "/skills/13",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=13",
+    "source": [],
+    "description": "<p>The secrets of deities, dogma, faith, and the realms of divine creatures both sublime and sinister are open to you. You also understand how magic works, though your training imparts a religious slant to that knowledge. Even if you’re untrained in Religion, you can use it to Recall Knowledge.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Society",
+    "slug": "society",
+    "id": 14,
+    "type": "skill",
+    "url": "/skills/14",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=14",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 251,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You understand the people and systems that make civilization run, and you know the historical events that make societies what they are today. Further, you can use that knowledge to navigate the complex physical, societal, and economic workings of settlements. Even if you’re untrained in Society, you can use it for the following general skill actions.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Stealth",
+    "slug": "stealth",
+    "id": 15,
+    "type": "skill",
+    "url": "/skills/15",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=15",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 251,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You are skilled at avoiding detection, allowing you to slip past foes, hide, or conceal an item.</p>\n<h3 id=\"being-stealthy\">Being Stealthy</h3>\n<p>If you want to sneak around when there are creatures that can see you, you can use a combination of Hide and Sneak to do so.</p>\n<p>- \nFirst, Hide behind something (either by taking advantage of cover or having the concealed condition due to fog, a spell, or a similar effect). A successful Stealth check makes you hidden, though the creatures still know roughly where you are.</p>\n<p>- \nSecond, now that you’re hidden, you can Sneak. That means you can move at half your Speed and attempt another Stealth check. If it’s successful, you’re now undetected. That means the creatures don’t know which square you’re in anymore.</p>\n<p>If you were approaching creatures that didn’t know you were there, you could begin Sneaking right away, since they didn’t know your location to start with. Some actions can cause you to become observed again, but they’re mostly what you’d expect: standing out in the open, attacking someone, making a bunch of noise, and so forth. If you Strike someone after successfully Hiding or Sneaking, though, they’re flat-footed to that Strike.</p>\n<p>Creatures can try to find you using the Seek action, described on page 471.</p>\n<p>Three conditions explain the states of detection. Remember that these conditions are relative to each creature—you can be observed by one creature while hidden to another and undetected by a third.</p>\n<h3 id=\"observed\">Observed</h3>\n<p>You’re in the creature’s clear view.</p>\n<h3>Hidden</h3>\n<p>The creature knows your location but can’t see you.</p>\n<h3 id=\"undetected\">Undetected</h3>\n<p>The creature doesn’t know your location.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Survival",
+    "slug": "survival",
+    "id": 16,
+    "type": "skill",
+    "url": "/skills/16",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=16",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 252,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You are adept at living in the wilderness, foraging for food and building shelter, and with training you discover the secrets of tracking and hiding your trail. Even if you’re untrained, you can still use Survival to Subsist.</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Thievery",
+    "slug": "thievery",
+    "id": 17,
+    "type": "skill",
+    "url": "/skills/17",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=17",
+    "source": [
+      {
+        "name": "Core Rulebook",
+        "id": 1,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=1",
+        "page": 253,
+        "version": "4.0"
+      }
+    ],
+    "description": "<p>You are trained in a particular set of skills favored by thieves and miscreants</p>\n",
+    "individual": true
+  },
+  {
+    "name": "Agriculture",
+    "slug": "agriculture",
+    "id": 18,
+    "type": "skill",
+    "url": "/skills/18",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=18",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 522
+      }
+    ],
+    "description": "<p>You plant crops and establish livestock in permanent farms, ranches, and other growing operations to create Farmland (page 535). If you're attempting to Establish Farmland in a hex that is predominantly plains, you must spend 1 RP and the check is against your Control DC. If you're targeting a hex that is predominantly hills, you must spend 2 RP and the check is against your Control DC + 5.</p>\n<p><strong>Critical Success</strong> You establish two adjacent Farmland hexes instead of one. If your target hex was a hills hex, the additional hex may be a hills hex or a plains hex; otherwise, the additional hex must be a plains hex. If no appropriate hex is available, treat this result as a regular success instead.</p>\n<p><strong>Success</strong> You establish one Farmland hex.</p>\n<p><strong>Failure</strong> You fail to establish a Farmland hex.</p>\n<p><strong>Critical Failure</strong> You fail to establish a Farmland hex, and your attempt potentially causes the spread of a blight. At the start of each of the next two Event phases, attempt a DC 6 flat check; on a failure, your kingdom experiences a Crop Failure event in this and all adjacent hexes.</p>\n<h3 id=\"harvest-cropsaction\">Harvest CropsAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/440\">Region</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 522</p>\n<p>Attempt a basic check to forage for wild edibles or gather excess crops from farms.</p>\n<p><strong>Critical Success</strong> Gain 1d4 Food commodities.</p>\n<p><strong>Success</strong> Gain 1 Food commodity.</p>\n<p><strong>Failure</strong> Gain no Food commodities.</p>\n<p><strong>Critical Failure</strong> Lose 1d4 Food commodities to spoilage; if you have no Food to lose, you instead gain 1 Unrest.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Arts",
+    "slug": "arts",
+    "id": 19,
+    "type": "skill",
+    "url": "/skills/19",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=19",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 522
+      }
+    ],
+    "description": "<p>You encourage your artisans to craft luxury goods and may even aid them in this pursuit. Roll 1 Resource Die and spend RP equal to the result. Then attempt a basic check.</p>\n<p><strong>Critical Success</strong> Your artisans exceed expectations and craft extravagant goods. Gain 1d4 Luxury Commodities.</p>\n<p><strong>Success</strong> Your artisans produce some delightful goods. Gain 1 Luxury Commodity.</p>\n<p><strong>Failure</strong> Your artisans fail to produce anything noteworthy.</p>\n<p><strong>Critical Failure</strong> Your artisans not only fail to produce anything noteworthy, but some took advantage of the opportunity to push their own agendas or earn more for themselves by selling to underground markets. Increase one of your Ruins by 1.</p>\n<h2 id=\"arts-trained-actions\">Arts Trained Actions</h2>\n<h3 id=\"create-a-masterpieceaction\">Create a MasterpieceAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 522</p>\n<p>You encourage your kingdom's artists to create and display a masterful work of art to bolster your kingdom's reputation. Attempt a basic check; the result affects either Fame or Infamy (depending on the type of kingdom you're running). Create a Masterpiece may be attempted only once per Kingdom turn regardless of the number of leaders pursuing activities.</p>\n<p><strong>Critical Success</strong> Gain 1 Fame or Infamy point immediately, and at the start of your next Kingdom turn, gain 1 additional Fame or Infamy point. Immediately roll 2 Resource Dice. Gain RP equal to the result.</p>\n<p><strong>Success</strong> Gain 1 Fame or Infamy point immediately.</p>\n<p><strong>Failure</strong> Your attempt to create a masterpiece fails.</p>\n<p><strong>Critical Failure</strong> Not only does your attempt to create a masterpiece fail, it does so in a dramatic and humiliating way. Lose 1 Fame or Infamy point; if you have no Fame or Infamy points to lose, instead gain 1d4 Unrest.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Boating",
+    "slug": "boating",
+    "id": 20,
+    "type": "skill",
+    "url": "/skills/20",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=20",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 522
+      }
+    ],
+    "description": "<p>Attempt a basic check to fish for food from the rivers and lakes in your kingdom.</p>\n<p><strong>Critical Success</strong> Gain 1d4 Food commodities.</p>\n<p><strong>Success</strong> Gain 1 Food commodity.</p>\n<p><strong>Failure</strong> Gain no Food commodities.</p>\n<p><strong>Critical Failure</strong> You lose some fishers to tragic accidents; gain 1 Unrest.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Defense",
+    "slug": "defense",
+    "id": 21,
+    "type": "skill",
+    "url": "/skills/21",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=21",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 523
+      }
+    ],
+    "description": "<p>Your command your engineers to construct a protected encampment, such as a fort or barbican, to serve as a defensive post in the hex. Spend RP as determined by the hex's most inhospitable terrain (see the Building on Rough Terrain sidebar on page 519). Then attempt a basic check. A fortified hex grants an additional bonus in warfare (see Appendix 3), but also gives traveling PCs a place to rest that prevents wandering monsters from interrupting their rest.</p>\n<p><strong>Critical Success</strong> You find a defensible position for your fortification and finish construction efficiently. Gain a refund of half the RP you spent to build in the hex, then reduce Unrest by 1.</p>\n<p><strong>Success</strong> You establish your fortification in the hex. Reduce Unrest by 1.</p>\n<p><strong>Failure</strong> You fail to fortify the hex.</p>\n<p><strong>Critical Failure</strong> Your attempt ends in disaster. Not only do you fail to build a structure, but you lose several workers to an accident, banditry, a vicious monster, or some other unforeseen occurrence. Gain 1 Unrest.</p>\n<h3 id=\"provide-careaction\">Provide CareAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 523</p>\n<p>Attempt a basic check to organize and encourage your settlements' healers, apothecaries, medics, and other caregivers to provide care and support for citizens in need.</p>\n<p><strong>Critical Success</strong> You provide unexpectedly compassionate support for the people. Reduce Unrest by 1 and reduce one Ruin of your choice by 1.</p>\n<p><strong>Success</strong> Your care soothes the worries and fears of the populace; reduce Unrest by 1.</p>\n<p><strong>Failure</strong> You don't provide any notable care for the citizens, but at least you don't make things worse.</p>\n<p><strong>Critical Failure</strong> Your attempt to provide care backfires. Increase your Unrest or a Ruin of your choice by 1.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Engineering",
+    "slug": "engineering",
+    "id": 22,
+    "type": "skill",
+    "url": "/skills/22",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=22",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 523
+      }
+    ],
+    "description": "<p>You order your kingdom's engineers to construct a network of robust roads through the hex. Travel along roads uses a terrain type one step better than the surrounding terrain; for example, roads through forest hexes—normally difficult terrain—allow travel as if it were open terrain.</p>\n<p>Spend RP as determined by the hex's most inhospitable terrain (see Building on Rough Terrain on page 519; if the hex includes any rivers that cross the hex from one hex side to any other, you must spend double the normal RP cost to also build bridges; this adds the Bridge structure to that hex). Then attempt a basic check. Work with the GM to determine where your roads appear on the map.</p>\n<p><strong>Critical Success</strong> You build roads into the target hex and one adjacent claimed hex that doesn't yet have roads and whose terrain features are at least as hospitable as those of the target hex. If no adjacent hex is appropriate, treat this result as a Success instead.</p>\n<p><strong>Success</strong> You build roads in the hex.</p>\n<p><strong>Failure</strong> You fail to build roads in the hex.</p>\n<p><strong>Critical Failure</strong> Your attempt to build roads ends in disaster. Not only do you fail to build roads, but you lose several workers to an accident, banditry, a vicious monster, or some other unforeseen occurrence. Gain 1 Unrest.</p>\n<h3 id=\"demolishaction\">DemolishAction</h3>\n<p><a href=\"/traits/436\">Civic</a><a href=\"/traits/49\">Downtime</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 523</p>\n<p>Choose a single occupied lot in one of your settlements and attempt a basic check to reduce it to Rubble and then clear the Rubble away to make ready for a new structure.  For multiple-lot structures, you'll need to perform multiple Demolish activities (or critically succeed at the activity) to fully clear all of the lots. As soon as you begin Demolishing a multiple-lot structure, all of the lots occupied by that structure no longer function.</p>\n<p><strong>Critical Success</strong> Choose one of the following effects: you demolish an entire multiple-lot structure all at once and clear all of the lots it occupied, or you recover 1d6 Commodities (chosen from lumber, stone, and ore) from the Rubble of a single-lot demolition.</p>\n<p><strong>Success</strong> You demolish the lot successfully.</p>\n<p><strong>Failure</strong> You fail to demolish the lot. It remains in Rubble and cannot be used for further construction until you successfully Demolish it.</p>\n<p><strong>Critical Failure</strong> As failure, but accidents during the demolition cost you the lives of some of your workers. Gain 1 Unrest.</p>\n<h3 id=\"establish-work-siteaction\">Establish Work SiteAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/440\">Region</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 524</p>\n<p>Your hire a crew of workers to travel to a hex that contains Lumber, Ore, or Stone to be harvested. Spend RP as determined by the hex's most inhospitable terrain (see the Building on Rough Terrain sidebar on page 519). Then attempt a basic check. Lumber camps can be established in any hex that contains a significant amount of forest terrain. Mines and quarries can be established in any hex that contains a significant amount of hill or mountain terrain.</p>\n<p><strong>Critical Success</strong> You establish a Work Site in the hex and proceed to discover an unexpectedly rich supply of high quality Commodities. All Commodity yields granted by this site are doubled until the end of the next Kingdom turn.</p>\n<p><strong>Success</strong> You establish a Work Site in the hex.</p>\n<p><strong>Failure</strong> You fail to establish a Work Site in the hex.</p>\n<p><strong>Critical Failure</strong> Not only do you fail to establish a Work Site, but you lose several workers to an accident, banditry, a vicious monster, or some other unforeseen occurrence. Gain 1 Unrest.</p>\n<h2 id=\"engineering-trained-actions\">Engineering Trained Actions</h2>\n<h3 id=\"irrigationaction\">IrrigationAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/440\">Region</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 524</p>\n<p><strong>Requirements</strong> You control a hex adjacent to a river or lake that itself does not contain a river or lake.</p>\n<p>You send excavators to build waterways, canals, or drainage systems to convey water from areas that have natural access to a river or lake. Spend RP as determined by the hex's most inhospitable terrain feature (see the Building on Rough Terrain sidebar on page 519). Then attempt a basic check.</p>\n<p><strong>Critical Success</strong> The hex gains a river or lake terrain feature (or you change the effects of a previous critical failure at Irrigation in this hex into a failure); work with your GM to determine where these features appear in the hex. In addition, your workers were efficient and quick, and you regain half the RP you spent building the waterways.</p>\n<p><strong>Success</strong> As success, but without regaining any RP.</p>\n<p><strong>Failure</strong> You fail to build workable systems or to restore a previous critical failure, and the hex does not gain the river or lake terrain feature.</p>\n<p><strong>Critical Failure</strong> As failure, but your attempts at Irrigation are so completely useless that they become breeding grounds for disease. Gain 1 Unrest. From this point onward, at the start of your Kingdom turn's Event phase, attempt a DC 4 flat check. This flat check's DC increases by 1 for each hex in your kingdom that contains a critically failed attempt at Irrigation. If you fail this flat check, your kingdom suffers a Plague event in addition to any other event it might have. You can attempt this activity again in a later Kingdom turn to undo a critically failed Irrigation attempt.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Exploration",
+    "slug": "exploration",
+    "id": 23,
+    "type": "skill",
+    "url": "/skills/23",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=23",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 524
+      }
+    ],
+    "description": "<p>While the PCs can strike out themselves to deal with ongoing events, it's often more efficient to Hire Adventurers. When you Hire Adventurers to help end an ongoing event, the DC is equal to your Control DC adjusted by the event's level modifier. Roll 1 Resource Die and spend RP equal to the result each time you attempt this activity.</p>\n<p><strong>Critical Success</strong> You end the continuous event.</p>\n<p><strong>Success</strong> The continuous event doesn't end, but you gain a +2 circumstance bonus to resolve the event during the next Event phase.</p>\n<p><strong>Failure</strong> You fail to end the continuous event. If you try to end the continuous event again, the cost in RP increases to 2 Resource Dice.</p>\n<p><strong>Critical Failure</strong> As failure, but word spreads quickly through the region—you can no longer attempt to end this continuous event by Hiring Adventurers.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Folklore",
+    "slug": "folklore",
+    "id": 24,
+    "type": "skill",
+    "url": "/skills/24",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=24",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 524
+      }
+    ],
+    "description": "<p>You declare a day of celebration. Holidays may be religious, historical, martial, or simply festive, but all relieve your citizens from their labors and give them a chance to make merry at the kingdom's expense. Attempt a basic check, but if your kingdom Celebrated a Holiday the previous turn, the DC increases by 4, as your kingdom hasn't had a chance to recover from the previous gala.</p>\n<p><strong>Critical Success</strong> Your holidays are a delight to your people. The event is expensive, but incidental income from the celebrants covers the cost. You gain a +2 circumstance bonus to Loyalty-based checks until the end of your next Kingdom turn.</p>\n<p><strong>Success</strong> Your holidays are a success, but they're also expensive. You gain a +1 circumstance bonus to Loyalty-based checks until the end of your next Kingdom turn. Immediately roll 1 Resource Die and spend RP equal to the result. If you can't afford this cost, treat this result as a Critical Failure instead.</p>\n<p><strong>Failure</strong> The holiday passes with little enthusiasm, but is still expensive. Immediately roll 1 Resource Die and spend RP equal to the result. If you can't afford this cost, treat this result as a Critical Failure instead.</p>\n<p><strong>Critical Failure</strong> Your festival days are poorly organized, and the citizens actively mock your failed attempt to celebrate. During the next turn, reduce your Resource Dice total by 4. The failure also causes you to take a –1 circumstance penalty to Loyalty-based checks until the end of the next Kingdom turn.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Industry",
+    "slug": "industry",
+    "id": 25,
+    "type": "skill",
+    "url": "/skills/25",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=25",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 525
+      }
+    ],
+    "description": "<p>There are five different categories of Commodities: Food, Lumber, Luxuries, Ore, and Stone. When you Trade Commodities, select one Commodity that your kingdom currently stockpiles and reduce that Commodity's stockpile by up to 4. Then attempt a basic check. If you trade with a group that you've established diplomatic relations with, you gain a +1 circumstance bonus to the check.</p>\n<p><strong>Critical Success</strong> At the beginning of the next Kingdom turn, you gain 2 bonus Resource Dice per point of stockpile expended from your Commodity now.</p>\n<p><strong>Success</strong> At the beginning of your next Kingdom turn, you gain 1 bonus Resource Die per point of stockpile expended from your Commodity now.</p>\n<p><strong>Failure</strong> You gain 1 bonus Resource Die at the beginning of your next Kingdom turn.</p>\n<p><strong>Critical Failure</strong> You gain no bonus Resource Dice (though the Commodity remains depleted). If you Traded Commodities the previous turn, gain 1 Unrest.</p>\n<h2 id=\"industry-trained-actions\">Industry Trained Actions</h2>\n<h3 id=\"relocate-capitalaction\">Relocate CapitalAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 525</p>\n<p><strong>Requirements</strong> One of your settlements that is not your current capital must contain a Castle, Palace, or Town Hall. All leaders must spend all of their leadership activities during the Activity phase of a Kingdom turn on this activity.</p>\n<p>The kingdom leaders announce that they are uprooting the seat of government from its current home and reestablishing it in another settlement. Attempt a check with a DC equal to the kingdom's Control DC + 5. You cannot Relocate your Capital again for at least 3 Kingdom turns.</p>\n<p><strong>Critical Success</strong> The move goes off splendidly, with people excited about the new capital and celebrating the leadership's wisdom.</p>\n<p><strong>Success</strong> The move goes smoothly and with minimal disruption, but some folks are upset or homesick. Increase Unrest by 1.</p>\n<p><strong>Failure</strong> The move causes unhappiness. Gain 1 Unrest and increase two Ruins of your choice by 1.</p>\n<p><strong>Critical Failure</strong> The people reject the idea of the new capital and demand you move it back. The move is unsuccessful, and your capital remains unchanged. Gain 1d4 Unrest. Increase three Ruins of your choice by 1 and the fourth Ruin by 3.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Intrigue",
+    "slug": "intrigue",
+    "id": 26,
+    "type": "skill",
+    "url": "/skills/26",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=26",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 526
+      }
+    ],
+    "description": "<p>You send spies out to gather intelligence on a neighboring nation, a cult or thieves' guild within your borders, an unclaimed Freehold, or even an unexplored adventure site. Alternately, you can simply send your spies out to investigate the current health of your kingdom. Attempt a basic check.</p>\n<p><strong>Critical Success</strong> You learn something valuable or helpful. If you were infiltrating a specific target, the GM decides what is learned, but the information is exact and precise. For example, if you were infiltrating an unexplored ruin, you might learn that the site is infested with web lurkers and spider swarms. If you were investigating your kingdom's health, your spies reveal easy methods to address citizen dissatisfaction, allowing you to choose one of the following: reduce Unrest by 1d4 or reduce a Ruin of your choice by 1.</p>\n<p><strong>Success</strong> You learn something helpful about the target, but the information is vague and imprecise. For example, if you were infiltrating the same ruin mentioned in the critical success above, you might learn that some sort of aberration uses the ruins as its lair. If you were investigating your kingdom's health, your spies learn enough that you can take action. Reduce your kingdom's Unrest by 1.</p>\n<p><strong>Failure</strong> Your spies fail to learn anything of import, but they are not themselves compromised.</p>\n<p><strong>Critical Failure</strong> You never hear from your spies again, but someone certainly does! You take a –2 circumstance penalty on all kingdom checks until the end of the next Kingdom turn as counter-infiltration from an unknown enemy tampers with your kingdom's inner workings.</p>\n<h2 id=\"intrigue-trained-actions\">Intrigue Trained Actions</h2>\n<h3 id=\"clandestine-businessaction\">Clandestine BusinessAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 526</p>\n<p>You know there are criminals in your kingdom, and they know you know. You encourage them to send kickbacks in the form of resources and Commodities to the government, but the common citizens will be more than upset if they find out! This starts as a basic check against your Control DC, but every subsequent Kingdom turn you pursue Clandestine Business, the DC increases by 2. Every Kingdom turn that passes without Clandestine Business reduces the DC by 1 (until you reach your Control DC).</p>\n<p><strong>Critical Success</strong> Immediately roll 2 Resource Dice. Gain RP equal to the result. In addition, you gain 1d4 Luxury Commodities. The public is none the wiser.</p>\n<p><strong>Success</strong> Either immediately roll 2 Resource Dice and gain RP equal to the result, or gain 1d4 Luxury Commodities. Regardless of your choice, rumors spread about where the government is getting these “gifts.” Increase Unrest by 1.</p>\n<p><strong>Failure</strong> Immediately roll 1 Resource Die and gain RP equal to the result. Rumors are backed up with eyewitness accounts. Increase Unrest by 1 and Corruption by 1.</p>\n<p><strong>Critical Failure</strong> You gain nothing from the Clandestine Business but angry citizens. Increase Unrest by 1d6, Corruption by 2, and one other Ruin of your choice by 1.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Magic",
+    "slug": "magic",
+    "id": 27,
+    "type": "skill",
+    "url": "/skills/27",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=27",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 526
+      }
+    ],
+    "description": "<p>Your spellcasters try to resolve issues when mundane solutions just aren't enough. Attempt a basic check.</p>\n<p><strong>Critical Success</strong> You can call upon your spellcasters' supernatural solution to aid in resolving any Kingdom skill check made during the remainder of this Kingdom turn. Do so just before a Kingdom skill check is rolled (by yourself or any other PC). Attempt a Magic check against the same DC in addition to the Kingdom skill check, and take whichever of the two results you prefer. If you don't use your Supernatural Solution by the end of this Kingdom turn, this benefit ends and you gain 10 kingdom XP instead.</p>\n<p><strong>Success</strong> As critical success, but the solution costs the kingdom 1d4 RP to research. This cost is paid now, whether or not you use your supernatural solution.</p>\n<p><strong>Failure</strong> Your attempt at researching a supernatural solution costs the kingdom 2d6 RP, but is ultimately a failure, providing no advantage.</p>\n<p><strong>Critical Failure</strong> As failure, but your spellcasters' resources and morale are impacted such that you cannot attempt a Supernatural Solution again for 2 Kingdom turns. Special You cannot influence a check with Supernatural Solution and Creative Solution simultaneously</p>\n<h2 id=\"magic-trained-actions\">Magic Trained Actions</h2>\n<h3 id=\"prognosticationaction\">PrognosticationAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 527</p>\n<p>Your kingdom's spellcasters read the omens and provide advice on how best to prepare for near-future events. Attempt a basic check.</p>\n<p><strong>Critical Success</strong> If you have a random kingdom event this turn, roll twice to determine the event that takes place. The players choose which of the two results occurs, and the kingdom gains a +2 circumstance bonus to the check to resolve the event.</p>\n<p><strong>Success</strong> Gain a +1 circumstance bonus to checks made to resolve random kingdom events this turn.</p>\n<p><strong>Failure</strong> Your spellcasters divine no aid.</p>\n<p><strong>Critical Failure</strong> Your spellcasters provide inaccurate readings of the future. You automatically have a random kingdom event this turn. Roll twice to determine the event that takes place; the GM decides which of the two results occurs.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Politics",
+    "slug": "politics",
+    "id": 28,
+    "type": "skill",
+    "url": "/skills/28",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=28",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 527
+      }
+    ],
+    "description": "<p>Attempt a basic check to draw upon your kingdom's treasury to enhance the quality of life for your citizens. This activity can be taken only during the Commerce phase of a Kingdom turn (page 538).</p>\n<p><strong>Critical Success</strong> Your push to Improve Lifestyles affords your citizens significant free time to pursue recreational activities. For the remainder of the Kingdom turn, you gain a +2 circumstance bonus to Culture-based checks.</p>\n<p><strong>Success</strong> Your push to Improve Lifestyles helps your citizens enjoy life. For the remainder of the Kingdom turn, you gain a +1 circumstance bonus to Culture-based checks.</p>\n<p><strong>Failure</strong> As success, but you've strained your treasury. Take a –1 circumstance penalty to Economy-based checks for the remainder of this Kingdom turn.</p>\n<p><strong>Critical Failure</strong> Your attempt to Improve Lifestyles backfires horribly as criminal elements in your kingdom abuse your generosity. You take a –1 circumstance penalty to Economy-based checks for the remainder of the Kingdom turn, gain 1 Unrest, and add 1 to a Ruin of your choice.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Scholarship",
+    "slug": "scholarship",
+    "id": 29,
+    "type": "skill",
+    "url": "/skills/29",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=29",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 527
+      }
+    ],
+    "description": "<p>You work with your kingdom's scholars, thinkers, and practitioners of magical and mundane experimentation to come up with new ways to resolve issues when business as usual is just not working. Attempt a basic check.</p>\n<p><strong>Critical Success</strong> You can call upon the solution to aid in resolving any Kingdom skill check made during the remainder of this Kingdom turn. Do so when a Kingdom skill check is rolled, but before you learn the result. Immediately reroll that check with a +2 circumstance bonus; you must take the new result. If you don't use your Creative Solution by the end of this turn, you lose this benefit and gain 10 kingdom XP instead.</p>\n<p><strong>Success</strong> As critical success, but the Creative Solution costs the kingdom 1d4 RP to research. This cost is paid now, whether or not you use your Creative Solution.</p>\n<p><strong>Failure</strong> Your attempt at researching a Creative Solution costs the kingdom 2d6 RP but is ultimately a failure. It provides no advantage.</p>\n<p><strong>Critical Failure</strong> As failure, but your scholars and thinkers are so frustrated that you take a –1 circumstance penalty to Culture-based checks until the end of the next Kingdom turn. <strong>Special</strong> You cannot influence a check with Supernatural Solution and Creative Solution simultaneously.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Statecraft",
+    "slug": "statecraft",
+    "id": 30,
+    "type": "skill",
+    "url": "/skills/30",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=30",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 528
+      }
+    ],
+    "description": "<p>You tap into the cash reserves of your kingdom for the PCs' personal use or to provide emergency funding for an event. This is a basic check, but after you succeed or critically succeed at this activity, all future attempts to Tap Treasury have their results worsened two degrees. This penalty persists until funds equal to those taken from the treasury are repaid via Capital Investment (page 529).</p>\n<p><strong>Critical Success</strong> You withdraw funds equal to the Currency per Additional PC column on Table 10–9: Party Treasure By Level on page 509 of the Pathfinder Core Rulebook (using your kingdom's level to set the amount), or you successfully fund the unexpected event that required you to Tap your Treasury.</p>\n<p><strong>Success</strong> As critical success, but you overdraw your treasury in the attempt. You take a –1 circumstance penalty to all Economy-based checks until the end of your next Kingdom turn.</p>\n<p><strong>Failure</strong> You fail to secure the funds you need, and rumors about the kingdom's potential shortfall of cash cause you to take a –1 circumstance penalty to all Loyalty and Economy-based checks until the end of your next Kingdom turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the rumors spiral out of control. Increase Unrest by 1 and add 1 to a Ruin of your choice.</p>\n<h2 id=\"statecraft-trained-actions\">Statecraft Trained Actions</h2>\n<h3 id=\"request-foreign-aidaction\">Request Foreign AidAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 528</p>\n<p><strong>Requirements</strong> You have diplomatic relations with the group you are requesting aid from.</p>\n<p>When disaster strikes, you send out a call for help to another nation with whom you have diplomatic relations. The DC of this check is equal to the other group's Negotiation DC +2 (see the sidebar on page 519).</p>\n<p><strong>Critical Success</strong> Your ally's aid grants a +4 circumstance bonus to any one Kingdom skill check attempted during the remainder of this Kingdom turn. You can choose to apply this bonus to any Kingdom skill check after the die is rolled, but must do so before the result is known. In addition, immediately roll 2 Resource Dice and gain RP equal to the result; this RP does not accrue into XP at the end of the turn if you don't spend it.</p>\n<p><strong>Success</strong> As success, but choose the benefit given by the aid: either roll 1 Resource Die and gain RP equal to the result or gain a +2 circumstance bonus to a check.</p>\n<p><strong>Failure</strong> Your ally marshals its resources but cannot get aid to you in time to deal with your current situation. At the start of your next Kingdom turn, gain 1d4 RP.</p>\n<p><strong>Critical Failure</strong> Your ally is tangled up in its own problems and is unable to assist you, is insulted by your request for aid, or might even have an interest in seeing your kingdom struggle against one of your ongoing events. Whatever the case, your pleas for aid make your kingdom look desperate. You gain no aid, but you do increase Unrest by 1d4.</p>\n<h3 id=\"send-diplomatic-envoyaction\">Send Diplomatic EnvoyAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 528</p>\n<p>You send emissaries to another group to foster positive relations and communication. The DC of this check is the group's Negotiation DC (see the sidebar on page 519). Attempts to Send a Diplomatic Envoy to a nation with which your kingdom is at war take a –4 circumstance penalty to the check and have the result worsened one degree. At the GM's option, some wars might be so heated that this activity has no chance of success.</p>\n<p><strong>Critical Success</strong> Your envoys are received quite warmly and make a good first impression. You establish diplomatic relations with the group (see page 534 for more information) and gain a +2 circumstance bonus to all checks made with that group until the next Kingdom turn.</p>\n<p><strong>Success</strong> You establish diplomatic relations.</p>\n<p><strong>Failure</strong> Your envoys are received, but the target organization isn't ready to engage in diplomatic relations. If you attempt to Send a Diplomatic Envoy to the group next Kingdom turn, you gain a +2 circumstance bonus to that check.</p>\n<p><strong>Critical Failure</strong> Disaster! Your envoy fails to reach their destination, is turned back at the border, or is taken prisoner or executed, at the GM's discretion. The repercussions on your kingdom's morale and reputation are significant. Choose one of the following results: gain 1d4 Unrest, add 1 to a Ruin of your choice, or immediately roll 2 Resource Dice and spend RP equal to the result. In any event, you cannot attempt to Send a Diplomatic Envoy to this same target for the next 3 Kingdom turns.The first time your kingdom succeeds at establishing diplomatic relations in the campaign, gain 60 kingdom XP as a milestone award (page 538).</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Trade",
+    "slug": "trade",
+    "id": 31,
+    "type": "skill",
+    "url": "/skills/31",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=31",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 529
+      }
+    ],
+    "description": "<p>You contribute funds from your personal wealth for the good of the kingdom, including coinage, gems, jewelry, weapons and armor salvaged from enemies, magical or alchemical items, and so on. Your contribution generates economic activity in the form of RP that can be used during your current Kingdom turn or on the next Kingdom turn (your choice).</p>\n<p>You can use Capital Investment to repay funds from Tap Treasury (page 528). In this case, no roll is needed and you simply deduct the appropriate amount of funds from your personal wealth to pay back that which was borrowed. When you use Capital Investment to generate RP, the amount of gp required to make an investment is set by your kingdom's level. Investments below this amount cause your attempt at Capital Investment to suffer an automatic critical failure, while investments above this amount are lost. The investment required is equal to the value listed on Table 10–9: Party Treasure by Level in the Pathfinder Core Rulebook (page 509); use the value for your kingdom's level under the “Currency per Additional PC” as the required investment value. This is a basic check.</p>\n<p><strong>Critical Success</strong> Your kingdom reaps the benefits of your investment. Immediately roll 4 Resource Dice. Gain RP equal to the result.</p>\n<p><strong>Success</strong> Your investment helps the economy. Immediately roll 2 Resource Dice. Gain RP equal to the result.</p>\n<p><strong>Failure</strong> Your investment ends up being used to shore up shortfalls elsewhere. Gain 1d4 RP.</p>\n<p><strong>Critical Failure</strong> Your investment is embezzled, lost, or otherwise misappropriated. Choose one of the following: either roll 1 Resource Die and gain RP equal to the result and also increase your Crime by an equal amount, or gain 0 RP and increase Crime by 1.</p>\n<h3 id=\"manage-trade-agreementsaction\">Manage Trade AgreementsAction</h3>\n<p><a href=\"/traits/437\">Commerce</a><a href=\"/traits/49\">Downtime</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 529</p>\n<p>You send agents out to attend to established trade agreements. Spend 2 RP per Trade Agreement you wish to manage. Then attempt a basic check. If you Managed Trade Agreements on the previous turn, increase this DC by 5.</p>\n<p><strong>Critical Success</strong> At the start of your next Kingdom turn, you gain 1 bonus Resource Die per trade agreement, and 1 Commodity of your choice per trade agreement (no more than half of these Commodities may be Luxuries).</p>\n<p><strong>Success</strong> As critical success, but you must choose between gaining Resource Dice or Commodities.</p>\n<p><strong>Failure</strong> You gain 1 RP per trade agreement at the start of your next turn.</p>\n<p><strong>Critical Failure</strong> You gain no benefit, as your traders and merchants met with bad luck on the road. You can't Manage Trade Agreements for 1 Kingdom turn.</p>\n<h3 id=\"purchase-commoditiesaction\">Purchase CommoditiesAction</h3>\n<p><a href=\"/traits/49\">Downtime</a><a href=\"/traits/439\">Leadership</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 529</p>\n<p>You can spend RP to Purchase Commodities, but doing so is more expensive than gathering them or relying upon trade agreements. When you Purchase Commodities, select the Commodity you wish to purchase (Food, Lumber, Luxuries, Ore, or Stone). Expend 8 RP if you're purchasing Luxuries or 4 RP if you're purchasing any other Commodity. Then attempt a basic check.</p>\n<p><strong>Critical Success</strong> You immediately gain 4 Commodities of the chosen type and 2 Commodities of any other type (except Luxuries).</p>\n<p><strong>Success</strong> You gain 2 Commodities of the chosen type.</p>\n<p><strong>Failure</strong> You gain 1 Commodity of the chosen type.</p>\n<p><strong>Critical Failure</strong> You gain no Commodities.</p>\n<h2 id=\"trade-trained-actions\">Trade Trained Actions</h2>\n<h3 id=\"collect-taxesaction\">Collect TaxesAction</h3>\n<p><a href=\"/traits/437\">Commerce</a><a href=\"/traits/49\">Downtime</a>\n<strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 530</p>\n<p>Tax collectors travel through the lands to collect funds for the betterment of the kingdom. Attempt a basic check.</p>\n<p><strong>Critical Success</strong> Your tax collectors are wildly successful! For the remainder of the Kingdom turn, gain a +2 circumstance bonus to Economy-based checks.</p>\n<p><strong>Success</strong> Your tax collectors gather enough to grant you a +1 circumstance bonus to Economy-based checks for the remainder of the Kingdom turn. If you attempted to Collect Taxes during the previous turn, increase Unrest by 1.</p>\n<p><strong>Failure</strong> As success, but the people are unhappy about taxes—increase Unrest by 1 (or by 2 if you attempted to Collect Taxes the previous turn).</p>\n<p><strong>Critical Failure</strong> Your tax collectors encounter resistance from the citizens and their attempts to gather taxes are rebuffed. While the tax collectors still manage to gather enough taxes to support essential government needs, they have angered the kingdom's citizens and encouraged rebellious acts. Increase Unrest by 2, and choose one Ruin to increase by 1.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Warfare",
+    "slug": "warfare",
+    "id": 32,
+    "type": "skill",
+    "url": "/skills/32",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=32",
+    "source": [],
+    "description": "<p><strong>Source</strong> <a href=\"/sources/150\">Kingmaker Adventure Path</a> pg. 530</p>\n<p>Warfare reflects a kingdom’s readiness to mobilize its military forces against its enemies—be they lone rampaging monsters or entire armies bent on invasion. Warfare has no exclusive skill activities as presented in this appendix, though it can be used with some general skill activities. Warfare is used extensively to resolve mass combat; see Appendix 3 for details on your options for the use of Warfare skill.</p>\n<h2 id=\"warfare-untrained-general-actions\">Warfare Untrained General Actions</h2>\n<p>- \n<a href=\"/skills/14\">Focused Attention</a></p>\n<p>- \n<a href=\"/skills/15\">New Leadership</a></p>\n<p>- \n<a href=\"/skills/17\">Quell Unrest</a></p>\n<h2 id=\"warfare-trained-general-actions\">Warfare Trained General Actions</h2>\n<ul>\n<li><a href=\"/skills/16\">Pledge of Fealty</a></li>\n</ul>\n<h2 id=\"related-feats\">Related Feats</h2>\n<p>To see a list of Feats related to Warfare, <a href=\"/feats\">click here</a>.</p>\n",
+    "individual": false
+  },
+  {
+    "name": "Wilderness",
+    "slug": "wilderness",
+    "id": 33,
+    "type": "skill",
+    "url": "/skills/33",
+    "prd": "https://2e.aonprd.com/Skills.aspx?ID=33",
+    "source": [
+      {
+        "name": "Kingmaker Adventure Path",
+        "id": 150,
+        "prd": "https://2e.aonprd.com/Sources.aspx?ID=150",
+        "page": 530
+      }
+    ],
+    "description": "<p>Attempt a basic check to gather excess livestock from local wildlife, ranches, and farms. This generates a number of Food commodities.</p>\n<p><strong>Critical Success</strong> Gain 1d4 Food commodities.</p>\n<p><strong>Success</strong> Gain 1 Food commodity.</p>\n<p><strong>Failure</strong> Gain no Food commodities.</p>\n<p><strong>Critical Failure</strong> Lose 1d4 Food commodities to spoilage. If you have no Food to lose, you instead gain 1 Unrest.</p>\n",
+    "individual": false
+  }
+]
