@@ -2,15 +2,15 @@
   import Ribbon from '$components/Ribbon.svelte';
   import ImageSlider from '$components/ImageSlider.svelte';
   import { filterCollection } from '$database';
-  export let ancestry;
+  export let preview;
 
   let sidebar = [];
 
   let languages = [];
   $: {
     const allLanguages = [
-      ...(ancestry.languages?.known || []),
-      ...(ancestry.languages?.optional || []),
+      ...(preview.languages?.known || []),
+      ...(preview.languages?.optional || []),
     ];
 
     if (allLanguages.length > 0) {
@@ -25,10 +25,10 @@
 
   let traits = [];
   $: {
-    if (ancestry?.traits?.length > 0) {
+    if (preview?.traits?.length > 0) {
       filterCollection('data', [
         { key: 'type', value: 'trait' },
-        { key: 'url', value: ancestry.traits, operator: 'in' },
+        { key: 'url', value: preview.traits, operator: 'in' },
       ]).then((data) => {
         traits = data;
       });
@@ -60,32 +60,32 @@
   $: {
     sidebar = [];
 
-    console.log(ancestry);
+    console.log(preview);
 
     const sbLanguages = {
-      known: (ancestry.languages?.known || [])
+      known: (preview.languages?.known || [])
         .filter((l, i, a) => a.indexOf(l) === i)
         .map((url) => {
           return languages.find((l) => l.url === url);
         })
         .filter((i) => i !== undefined),
-      optional: (ancestry.languages?.optional || [])
+      optional: (preview.languages?.optional || [])
         .filter((l, i, a) => a.indexOf(l) === i)
         .map((url) => {
           return languages.find((l) => l.url === url);
         })
         .filter((i) => i !== undefined),
       additional: `${
-        ancestry.languages?.additional || 0
-          ? ancestry.languages?.additional + ' + '
+        preview.languages?.additional || 0
+          ? preview.languages?.additional + ' + '
           : ''
       }INT modifier`,
     };
 
-    if (ancestry.ability) {
+    if (preview.ability) {
       sidebar.push({
         title: 'Key Ability',
-        value: ancestry.ability
+        value: preview.ability
           .map((a) => {
             return a.charAt(0).toUpperCase() + a.slice(1);
           })
@@ -93,29 +93,29 @@
       });
     }
 
-    if (ancestry.hp) {
+    if (preview.hp) {
       sidebar.push({
         title: 'Hit Points',
         value:
-          ancestry.hp + `${ancestry.type === 'class' ? ' + CON modifier' : ''}`,
+          preview.hp + `${preview.type === 'class' ? ' + CON modifier' : ''}`,
       });
     }
 
-    if (ancestry.proficiencies?.saves) {
+    if (preview.proficiencies?.saves) {
       sidebar.push({
         title: 'Saves',
-        list: Object.entries(ancestry.proficiencies.saves).map(
+        list: Object.entries(preview.proficiencies.saves).map(
           ([k, v]) =>
             `${k.charAt(0).toUpperCase() + k.slice(1)} - ${trainedLevel(v)}`,
         ),
       });
     }
 
-    if (ancestry.proficiencies?.attacks) {
+    if (preview.proficiencies?.attacks) {
       // TODO: Something if "Other" is a reference
       sidebar.push({
         title: 'Attacks',
-        list: Object.entries(ancestry.proficiencies.attacks)
+        list: Object.entries(preview.proficiencies.attacks)
           .filter(([k, v]) => Array.isArray(v) || v !== 'U')
           .map(([k, v]) => {
             if (Array.isArray(v)) {
@@ -142,25 +142,25 @@
       });
     }
 
-    if (ancestry.proficiencies?.defenses) {
+    if (preview.proficiencies?.defenses) {
       sidebar.push({
         title: 'Defenses',
-        list: Object.entries(ancestry.proficiencies.defenses).map(
+        list: Object.entries(preview.proficiencies.defenses).map(
           ([k, v]) =>
             `${k.charAt(0).toUpperCase() + k.slice(1)} - ${trainedLevel(v)}`,
         ),
       });
     }
 
-    if (ancestry.proficiencies?.perception) {
+    if (preview.proficiencies?.perception) {
       sidebar.push({
         title: 'Perception',
-        value: trainedLevel(ancestry.proficiencies.perception),
+        value: trainedLevel(preview.proficiencies.perception),
       });
     }
 
-    if (ancestry.skills) {
-      let skillProf = ancestry?.proficiencies?.skills;
+    if (preview.skills) {
+      let skillProf = preview?.proficiencies?.skills;
       if (skillProf && Object.keys(skillProf).length > 0) {
         skillProf = Object.keys(skillProf).map(
           (s) => s.charAt(0).toUpperCase() + s.slice(1),
@@ -172,23 +172,23 @@
       sidebar.push({
         title: 'Skill Training',
         value: `${
-          ancestry.skills || 0 ? ancestry.skills + ' + ' : ''
+          preview.skills || 0 ? preview.skills + ' + ' : ''
         }INT modifier${skillProf ? ' plus:' : ''}`,
         list: skillProf,
       });
     }
 
-    if (ancestry.size) {
+    if (preview.size) {
       sidebar.push({
         title: 'Size',
-        value: ancestry.size.charAt(0).toUpperCase() + ancestry.size.slice(1),
+        value: preview.size.charAt(0).toUpperCase() + preview.size.slice(1),
       });
     }
 
-    if (ancestry.speed) {
+    if (preview.speed) {
       sidebar.push({
         title: 'Speed',
-        value: `${ancestry.speed} ft`,
+        value: `${preview.speed} ft`,
       });
     }
 
@@ -209,10 +209,10 @@
       });
     }
 
-    if (ancestry?.senses?.length > 0) {
+    if (preview?.senses?.length > 0) {
       sidebar.push({
         title: 'Senses',
-        list: ancestry.senses.map((s) => {
+        list: preview.senses.map((s) => {
           console.log(s);
           const sense = s.type.charAt(0).toUpperCase() + s.type.slice(1);
           if (s.precision === 'precise') {
@@ -233,37 +233,37 @@
   }
 
   $: color =
-    ancestry.type === 'class'
-      ? `--${ancestry.name.toLowerCase()}`
-      : `--rarity-${ancestry.rarity}`;
+    preview.type === 'class'
+      ? `--${preview.name.toLowerCase()}`
+      : `--rarity-${preview.rarity}`;
 </script>
 
 <article
-  class="ancestry"
-  style={`--bkg: var(${color}); --clr: var(--${ancestry.name.toLowerCase()}-text)`}
+  class="preview"
+  style={`--bkg: var(${color}); --clr: var(--${preview.name.toLowerCase()}-text)`}
 >
   <div class="container">
     <h2 class="title type--h2">
       <Ribbon {color}>
         <span class="title--inner">
-          {ancestry.name}
+          {preview.name}
         </span>
       </Ribbon>
     </h2>
 
     <div class="description type">
       <div class="slider">
-        <ImageSlider images={ancestry.images} />
+        <ImageSlider images={preview.images} />
       </div>
-      {@html ancestry.description}
+      {@html preview.description}
 
-      {#if ancestry.sidebar}
-        <aside class="item-sidebar">{@html ancestry.sidebar}</aside>
+      {#if preview.sidebar}
+        <aside class="item-sidebar">{@html preview.sidebar}</aside>
       {/if}
 
-      {#if ancestry.features?.length}
+      {#if preview.features?.length}
         <ul>
-          {#each ancestry.features as feature}
+          {#each preview.features as feature}
             <li class="type">
               <h3>{feature.title}</h3>
               {@html feature.description}
@@ -299,7 +299,7 @@
           {/each}
         </dl>
       {/if}
-      <a class="prd" href={ancestry.prd}>PRD</a>
+      <a class="prd" href={preview.prd}>PRD</a>
     </aside>
   </div>
 </article>
@@ -307,9 +307,9 @@
 <style lang="scss">
   @import '$sass/shared';
 
-  .ancestry {
+  .preview {
     container-type: inline-size;
-    container-name: ancestry;
+    container-name: preview;
   }
 
   .container {
@@ -320,7 +320,7 @@
     grid-template-columns: 1fr;
     margin-inline: auto;
 
-    @container ancestry (min-width: 550px) {
+    @container preview (min-width: 550px) {
       grid-template-columns: minmax(300px, 65ch) 200px;
       max-width: max-content;
     }
@@ -341,14 +341,14 @@
 
   .description {
     container-type: inline-size;
-    container-name: ancestry-desc;
+    container-name: preview-desc;
   }
 
   .slider {
     max-width: 300px;
     margin: 0 auto;
 
-    @container ancestry-desc (min-width: 430px) {
+    @container preview-desc (min-width: 430px) {
       float: right;
     }
   }
@@ -357,7 +357,7 @@
     grid-column: 1;
     grid-row: 3;
 
-    @container ancestry (min-width: 550px) {
+    @container preview (min-width: 550px) {
       grid-column: 2;
       grid-row: 2;
     }

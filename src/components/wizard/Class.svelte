@@ -3,7 +3,7 @@
   import { writable } from 'svelte/store';
   import ListFilter from '$components/ListFilter.svelte';
   import ListPreview from '$components/ListPreview.svelte';
-  import Ancestry from '$components/Ancestry.svelte';
+  import Preview from '$components/Preview.svelte';
   import Expand from '$icons/expand_less.svg?raw';
   import { filterCollection } from '$database';
 
@@ -110,7 +110,7 @@
 
     <dialog bind:this={dialog} open={open ? true : null}>
       {#if preview}
-        <Ancestry ancestry={preview} />
+        <Preview {preview} />
 
         <form class="dialog-options" method="dialog">
           <button on:click|preventDefault={select}>Choose {preview.name}</button
