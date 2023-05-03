@@ -38,6 +38,7 @@ specifiers:
   prettier: ^2.8.2
   prettier-plugin-svelte: ^2.9.0
   puppeteer: ^19.7.4
+  puppeteer-cluster: ^0.23.0
   sass: ^1.58.3
   sass-toolkit: ^2.10.2
   slugify: ^1.6.6
@@ -94,6 +95,7 @@ devDependencies:
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_cgqg3krxgxfdbq6p5ohud6nmhm
   puppeteer: 19.7.4_typescript@4.9.5
+  puppeteer-cluster: 0.23.0_puppeteer@19.7.4
   sass: 1.58.3
   slugify: 1.6.6
   stylelint: 14.16.1
@@ -3516,6 +3518,17 @@ packages:
   /punycode/2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
+    dev: true
+
+  /puppeteer-cluster/0.23.0_puppeteer@19.7.4:
+    resolution: {integrity: sha512-108terIWDzPrQopmoYSPd5yDoy3FGJ2dNnoGMkGYPs6xtkdhgaECwpfZkzaRToMQPZibUOz0/dSSGgPEdXEhkQ==}
+    peerDependencies:
+      puppeteer: '>=1.5.0'
+    dependencies:
+      debug: 4.3.4
+      puppeteer: 19.7.4_typescript@4.9.5
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /puppeteer-core/19.7.4_typescript@4.9.5:
