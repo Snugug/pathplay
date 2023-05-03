@@ -21,7 +21,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "prepare": "husky install",
     "predata:get": "del ./public/data",
-    "data:get": "node ./lib/utils/cluster.js"
+    "data:get": "node ./lib/collect.js"
   },
   "lint-staged": {
     "**/*.{svelte,astro}": "stylelint",
