@@ -20,10 +20,7 @@
   }
 </script>
 
-<article
-  class="character class"
-  data-class={character.class?.toLowerCase() || null}
->
+<article class="character class">
   <a href="/characters/{character.id}" class="link">
     <div class="portrait">
       {#if character.portrait}
@@ -33,8 +30,13 @@
         />
       {/if}
     </div>
-    <h3 class="character--name">
-      <Ribbon
+    <h3
+      class="character--name"
+      style={`color: var(--${
+        character.class?.name?.toLowerCase() + '-text' || '--black'
+      }, var(--black))`}
+    >
+      <Ribbon color={`--${character.class?.name?.toLowerCase() || '--white'}`}
         ><span class="character--inner-name">{character.name}</span></Ribbon
       >
     </h3>
