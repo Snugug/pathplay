@@ -41,7 +41,9 @@ $lightness: (
   ),
 );
 
-$colors: ();
+$colors: (
+  'true-black': #000,
+);
 
 @each $color, $hue in $hues {
   $sat: map.get($saturations, $color);
@@ -87,6 +89,7 @@ $class-colors: (
   druid: 'dark-green',
   fighter: 'red',
   gunslinger: 'grey',
+  'gunslinger-text': 'true-black',
   inventor: 'dark-yellow',
   investigator: 'pink',
   magus: 'dark-teal',
