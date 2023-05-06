@@ -163,18 +163,18 @@
 
   dialog {
     // position: sticky;
-    top: 1rem;
-    left: 1rem;
-    width: 100vw;
-    height: 100vh;
+    // top: 1rem;
+    // left: 1rem;
+    width: 100svw;
+    height: 100svh;
     // border: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
     padding: 1rem;
     color: var(--theme-text);
     background-color: var(--theme-body);
-    max-height: calc(100vh - 2rem);
-    max-width: calc(100vw - 2rem);
+    max-height: calc(100svh - 2rem);
+    max-width: calc(100svw - 2rem);
     // max-height: calc(100vh - 4rem);
     z-index: 100;
   }
@@ -186,6 +186,7 @@
     align-self: flex-start;
     width: 100%;
     height: unset;
+    margin: unset;
     background-color: transparent;
     border: none;
   }
