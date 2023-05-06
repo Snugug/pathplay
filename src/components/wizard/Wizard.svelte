@@ -24,6 +24,21 @@
   let preview;
   let details;
 
+  const keySize = 860;
+
+  let open = window.innerWidth >= keySize;
+
+  window.addEventListener('resize', () => {
+    if (preview) {
+      dialog.close();
+    }
+    open = window.innerWidth >= keySize;
+
+    if (open) {
+      dialog.setAttribute('open', true);
+    }
+  });
+
   // Set up context
   setContext('filter', {
     source,
@@ -68,7 +83,9 @@
   function previewAncestry(a) {
     return () => {
       preview = a;
-      // dialog.showModal();
+      if (!open) {
+        dialog.showModal();
+      }
     };
   }
 
@@ -115,9 +132,15 @@
       </ul>
     {/if}
 
-    <dialog bind:this={dialog} open={open ? true : null}>
+    <dialog
+      bind:this={dialog}
+      data-inline={open ? true : null}
+      open={open ? true : null}
+    >
       {#if preview}
-        <Preview {preview} />
+        <div class="view">
+          <Preview {preview} />
+        </div>
 
         <form class="dialog-options" method="dialog">
           <button on:click|preventDefault={select}>Choose {preview.name}</button
@@ -138,17 +161,37 @@
     font-size: 2rem;
   }
 
-  dialog[open] {
+  dialog {
+    // position: sticky;
+    top: 1rem;
+    left: 1rem;
+    width: 100vw;
+    height: 100vh;
+    // border: none;
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+    color: var(--theme-text);
+    background-color: var(--theme-body);
+    max-height: calc(100vh - 2rem);
+    max-width: calc(100vw - 2rem);
+    // max-height: calc(100vh - 4rem);
+    z-index: 100;
+  }
+
+  dialog[data-inline] {
     position: sticky;
     top: 1rem;
+    left: unset;
     align-self: flex-start;
-    margin: 0;
     width: 100%;
+    height: unset;
     background-color: transparent;
     border: none;
-    padding: 0;
-    color: var(--theme-text);
-    max-height: calc(100vh - 2rem);
+  }
+
+  .view {
+    max-height: calc(100vh - 6rem);
     overflow-y: auto;
   }
 
@@ -158,10 +201,13 @@
 
   .wizard {
     display: grid;
-    grid-template-columns: 400px 1fr;
     row-gap: 1rem;
     column-gap: 2rem;
     padding: 1rem;
+
+    @media (min-width: 860px) {
+      grid-template-columns: 400px 1fr;
+    }
   }
 
   .ancestries {
