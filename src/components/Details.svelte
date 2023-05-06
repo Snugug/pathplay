@@ -51,7 +51,7 @@
     transition: transform 0.2s ease-in-out;
     transform: rotate(90deg);
 
-    details[open] & {
+    details[open] > summary > & {
       transform: rotate(180deg);
     }
   }
