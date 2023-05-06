@@ -1,6 +1,7 @@
 <script>
   import Ribbon from '$components/Ribbon.svelte';
   import ImageSlider from '$components/ImageSlider.svelte';
+  import Details from '$components/Details.svelte';
   import { filterCollection } from '$database';
   export let preview;
 
@@ -280,14 +281,16 @@
       {/if}
 
       {#if preview.features?.length}
-        <ul>
-          {#each preview.features as feature}
-            <li class="type">
-              <h3>{feature.title}</h3>
-              {@html feature.description}
-            </li>
-          {/each}
-        </ul>
+        <Details title="Features">
+          <ul>
+            {#each preview.features as feature}
+              <li class="type">
+                <h3>{feature.title}</h3>
+                {@html feature.description}
+              </li>
+            {/each}
+          </ul>
+        </Details>
       {/if}
     </div>
 
