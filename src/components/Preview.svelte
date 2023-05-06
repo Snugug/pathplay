@@ -93,6 +93,24 @@
       });
     }
 
+    if (preview.boosts) {
+      sidebar.push({
+        title: `Ability Boost${preview.boosts.length > 1 ? 's' : ''}`,
+        list: preview.boosts.map((a) =>
+          a.toLowerCase() === 'fre' ? 'Free' : a.toUpperCase(),
+        ),
+      });
+    }
+
+    if (preview.flaws) {
+      sidebar.push({
+        title: `Ability Flaw${preview.flaws.length > 1 ? 's' : ''}`,
+        list: preview.flaws.map((a) =>
+          a.toLowerCase() === 'fre' ? 'Free' : a.toUpperCase(),
+        ),
+      });
+    }
+
     if (preview.hp) {
       sidebar.push({
         title: 'Hit Points',
